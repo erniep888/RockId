@@ -5,15 +5,16 @@ Definition
 ----------
 A demonstration application for Feature Drivent Development, Angular, IIS, SQL Server, and .NET C# Web API Core 2.
 
-- [Purpose](PURPOSE.md)
-- [Technologies Used](TECHNOLOGIES.md)
+- [Purpose](Documents/PURPOSE.md)
+- [Technologies Used](Documents/TECHNOLOGIES.md)
+- [Features](Documents/FEATURES.md)
 
 Prerequisite
 ------------
 - Angular 6
 - .NET C# Web API Core 2
 - SQL Server 2017
-- [Identity Server Creation](IDENTITYSERVERCREATION.md)
+- [Identity Server Creation](Documents/IDENTITYSERVERCREATION.md)
 
 Install
 -------
