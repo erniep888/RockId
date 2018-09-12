@@ -72,9 +72,3 @@ This server enables a centralized login logic for web, mobile, native, and servi
 * validate tokens
 
 [Creation Process](IDENTITYSERVERCREATION.md)
-
-## User Interface ##
-
-Mock-Up
-
-![Capture.PNG](https://bitbucket.org/repo/kM9doxe/images/3953175467-Capture.PNG)
