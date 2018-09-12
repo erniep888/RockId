@@ -8,6 +8,7 @@ A demonstration application for Feature Drivent Development, Angular, IIS, SQL S
 - [Purpose](Documents/PURPOSE.md)
 - [Technologies Used](Documents/TECHNOLOGIES.md)
 - [Features](Documents/FEATURES.md)
+- [Milestone Plan](Documents/MILESTONES.md)
 
 Prerequisite
 ------------
