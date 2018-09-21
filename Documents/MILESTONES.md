@@ -7,20 +7,16 @@ This document serves as the milestone plan for the implementation of RockId 1.0.
 
 ## 1.0 Milestones ##
 
-|  | Target Date | Actual Delivery |  Feature  | Percent Complete | Description
-|--|--|--|--|--|
-| Milestone 1 (M1) | 09-21-2018 | | |
-|  | | | User Security | 70 | Anon denied, login with email
-|  | | | Identify Rock | 15 | Grain size - Glassy
-| Milestone 2 (M2) | 10-05-2018 | | |
-|  | | | User Security | 100 | Password restrictions
-|  | | | Display All Rocks | 100 | 
-| Milestone 3 (M3) | 10-19-2018 | | |
-|  | | | Display All Action | 100 | 
-|  | | | Identify Rock | 60| Fine grained (scratch & light)
-| Milestone 4 (M4) | 11-02-2018 | | |
-|  | | | Identify Rock | 100| Fine grained (medium & dark)
+|  | Target |  Delivery |  Feature  | Completion | Description
+|--|--|--|--|--|--|
+| Milestone 1 (M1) | 09-23-2018 | | |
+|  | 09-22-2018 | | [Infrastructure](EPICS-INFRASTRUCTURE.md) | 50% | No database
+|  | 09-23-2018 | | [User Security](EPICS-USER_SECURITY.md) | 30% | Story #6 only
+| Milestone 2 (M2) | 10-07-2018 | | |
+|  | 10-05-2018 | | [User Security](EPICS-USER_SECURITY.md) | 100% | 
+|  | 10-07-2018 | | [All Actions](EPICS-ALL_ACTIONS.md) | 100% | 
 
 
+## Approvals ##
 > *Approved by Primary Business Stakeholder (09/12/2018)*
 > *Approved by Primary Technical Owner (09/12/2018)*

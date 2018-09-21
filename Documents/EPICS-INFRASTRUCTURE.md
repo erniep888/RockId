@@ -15,4 +15,4 @@ This is an implicit feature that represents the initial creation of the underlyi
 	* Story #13 : (1) : As a developer, I need to research a grid or table control that is compatible with Angular 6.
 * Epic #5 : (8) : Perform research and create a local SQL Server database
     * Story #11 : (1) : As a SQL Server developer, I need to research a local SQL Server database.
-	* Story #12 : (3) : As a SQL Server developer, I need to create the initial project db and identify and document a migration strategy.
+	* Story #12 : (5) : As a SQL Server developer, I need to create the initial project db and identify and document a migration strategy.
