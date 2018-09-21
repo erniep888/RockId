@@ -55,7 +55,7 @@ This document serves as the feature list that makes up the RockId application. T
 								* Yes, it splits easily into thin smooth sheets - Metamorphic - Slate
 								* Yes, it does not split easily - Metamorphic - Shale
 							* No, it does have slippery feel colored green to black - Metamorphic - Serpentine
-		 * Mixed Fine and Coarse
+		* Mixed Fine and Coarse
 			* Not in release 1.0
 		* Medium to Coarse
 			* Not in release 1.0

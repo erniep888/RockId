@@ -7,19 +7,19 @@ This document serves as the milestone plan for the implementation of RockId 1.0.
 
 ## 1.0 Milestones ##
 
-| Id | Date Due | Feature  | Percent Complete | Description
+|  | Target Date | Actual Delivery |  Feature  | Percent Complete | Description
 |--|--|--|--|--|
-| Milestone 1 (M1) | 09-21-2018 | | 
-|  | | User Security | 70 | Anon denied, login with email
-|  | | Identify Rock | 15 | Grain size - Glassy
-| Milestone 2 (M2) | 10-05-2018 | | 
-|  | | User Security | 100 | Password restrictions
-|  | | Display All Rocks | 100 | 
-| Milestone 3 (M3) | 10-19-2018 | | 
-|  | | Display All Action | 100 | 
-|  | | Identify Rock | 60| Fine grained (scratch & light)
-| Milestone 4 (M4) | 11-02-2018 | | 
-|  | | Identify Rock | 100| Fine grained (medium & dark)
+| Milestone 1 (M1) | 09-21-2018 | | |
+|  | | | User Security | 70 | Anon denied, login with email
+|  | | | Identify Rock | 15 | Grain size - Glassy
+| Milestone 2 (M2) | 10-05-2018 | | |
+|  | | | User Security | 100 | Password restrictions
+|  | | | Display All Rocks | 100 | 
+| Milestone 3 (M3) | 10-19-2018 | | |
+|  | | | Display All Action | 100 | 
+|  | | | Identify Rock | 60| Fine grained (scratch & light)
+| Milestone 4 (M4) | 11-02-2018 | | |
+|  | | | Identify Rock | 100| Fine grained (medium & dark)
 
 
 > *Approved by Primary Business Stakeholder (09/12/2018)*
