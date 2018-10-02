@@ -1,4 +1,4 @@
-# What is RockId? #
+# RockId Purpose #
 
 ## Purpose ##
 
@@ -40,25 +40,25 @@ RockId is used to identity a rock as belonging to one of the three possible rock
 
 * User Interface
 * API
-     * Controllers
+  * Controllers
 * Business
-     * Data Transfer Objects (Dtos)
-     * Mappers
-     * Logic
+  * Data Transfer Objects (Dtos)
+  * Mappers
+  * Logic
 * Domain
-     * Contexts
-     * Filters
-     * Models
-     * ModelBuilders
+  * Contexts
+  * Filters
+  * Models
+  * ModelBuilders
 * Database
 
 ## Deployment Structure ##
 
 * Reverse Proxy on Port 6000 ( [IIS configure](https://blogs.msdn.microsoft.com/friis/2016/08/25/setup-iis-with-url-rewrite-as-a-reverse-proxy-for-real-world-apps/) )
-     * Angular UI on Port 5900 ( IIS )
-     * Web API on Port 5800 ( IIS )
-           * SQL Server 2017
-           * Elastic Search
+  * Angular UI on Port 5900 ( IIS )
+  * Web API on Port 5800 ( IIS )
+    * SQL Server 2017
+    * Elastic Search
 
 ## IdentityServer4 ##
 
