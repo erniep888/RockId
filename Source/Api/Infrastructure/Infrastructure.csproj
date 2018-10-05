@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>RockId.Infrastructure</AssemblyName>
+    <RootNamespace>RockId.Infrastructure</RootNamespace>
   </PropertyGroup>
 
 </Project>
