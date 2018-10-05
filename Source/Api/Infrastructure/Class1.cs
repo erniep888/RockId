@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Infrastructure
+namespace RockId.Infrastructure
 {
     public class Class1
     {
