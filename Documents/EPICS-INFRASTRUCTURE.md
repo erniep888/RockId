@@ -15,6 +15,7 @@ This is an implicit feature that represents the initial creation of the underlyi
 * Epic #3 : (3) : Perform research and create Web API project(s)
   * Story #7 : (1) : As a Web API developer, I need to research the ASP.NET CORE Web API.
   * Story #8 : (2) : As a Web API developer, I need to create a single Web API back end.
+  * Story #37 : (5) : As a Web API developer, I need to know the proper way to write unit tests following TDD best practices.
 * Epic #4 : (5) : Perform research and create an Angular 6 UI
   * Story #9 : (1) : As an Angular developer, I need to research Angular 6.
   * Story #10 : (3) : As an Angular developer, I need to create the Angular UI with an example routing.
