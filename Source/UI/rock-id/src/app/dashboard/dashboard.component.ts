@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  tiles: Array<string> = ['1','2','3'];
+  tiles: any[] = ['1','2','3'];
 
   constructor() { }
 

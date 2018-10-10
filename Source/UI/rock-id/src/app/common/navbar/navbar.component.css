@@ -1,0 +1,5 @@
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+  color: rgba(0, 0, 0);
+  background-color: #eee;
+  border-radius: 5px;
+}
