@@ -24,7 +24,7 @@ Repository Structure
 - [Documents](Documents) - Contains all documentation for the entire application.
 - [Source](Source) - Contains all of the application source code
 
-  - UI - Contains the user interface implemented in Angular 6
+  - [UI](Source/UI/rock-id) - Contains the user interface implemented in Angular 6
   - [Api](Source/Api) - Contains the ASP.NET Core Web API.
   - Database - Contains the scripts for creating and maintaining the database.
   - [Identity](Source/Identity) - Contains the identity server implementation.
