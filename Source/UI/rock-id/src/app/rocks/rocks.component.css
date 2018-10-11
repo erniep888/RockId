@@ -6,3 +6,8 @@ table{
 table > thead > td {
   font-weight: bold;
 }
+
+button {
+  position: absolute;
+  right: 30px;
+}
