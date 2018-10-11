@@ -15,9 +15,10 @@ A demonstration application for Feature Driven Development, Angular, IIS, SQL Se
   - [Epics - All Identified Rocks](Documents/EPICS-ALL_ROCKS.md)
   - [Epics - All Action History](Documents/EPICS-ALL_ACTIONS.md)
   - [Epics - Identify Rock](Documents/EPICS-IDENTIFY_ROCK.md)
-  - [Milestone Plan](Documents/MILESTONES.md)
-  - [Architecture](Documents/ARCHITECTURE.md)
-  - [Implementation](Documents/IMPLEMENTATION.md)
+
+- [Milestone Plan](Documents/MILESTONES.md)
+- [Architecture](Documents/ARCHITECTURE.md)
+- [Implementation](Documents/IMPLEMENTATION.md)
 
 Repository Structure
 --------------------
