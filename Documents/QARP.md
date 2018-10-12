@@ -16,13 +16,13 @@ QARP stands for the **Q**uestion, **A**nswer, and **R**esult **P**rocess that is
 The solution is a tree data structure whose nodes can be either a question or an answer.  An answer node is a terminating node while a question node will have one or more child nodes.  The table structure is as follows:
 
 **QARP Table**
-``` sql
-*ID*
-*PARENT_ID*  - necessary to allow back navigation
-*IS_QUESTION*  - necessary to allow application to seek child answers
-*DISPLAY_TEXT*  - contains the question or answer
-*DISPLAY_ORDER*  - necessary to group child answers in a specific order 
-*ROCK_TYPE_ID* - the id of the rock type stored in the **ROCK_TYPES** table.
+``` 
+ID
+PARENT_ID  - necessary to allow back navigation
+IS_QUESTION  - necessary to allow application to seek child answers
+DISPLAY_TEXT  - contains the question or answer
+DISPLAY_ORDER  - necessary to group child answers in a specific order 
+ROCK_TYPE_ID - the id of the rock type stored in the ROCK_TYPES table
 ```
 
 The application finds child answers by searching the table where the *PARENT_ID* matches the current question *ID*.  The child answers are display in the *DISPLAY_ORDER*.
