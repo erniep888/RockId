@@ -12,11 +12,11 @@ This is an implicit feature that represents the initial creation of the underlyi
 
 ## Epics -> Stories ##
 
-* Epic #3 : (3) : Perform research and create Web API project(s)
+* :checkered_flag: Epic #3 : (3) : Perform research and create Web API project(s)
   * :heavy_check_mark: Story #7 : (1) : As a Web API developer, I need to research the ASP.NET CORE Web API.
   * :heavy_check_mark: Story #8 : (2) : As a Web API developer, I need to create a single Web API back end.
   * :heavy_check_mark: Story #37 : (5) : As a Web API developer, I need to know the proper way to write unit tests following TDD best practices.
-* Epic #4 : (5) : Perform research and create an Angular 6 UI
+* :checkered_flag: Epic #4 : (5) : Perform research and create an Angular 6 UI
   * :heavy_check_mark: Story #9 : (1) : As an Angular developer, I need to research Angular 6.
   * :heavy_check_mark: Story #10 : (3) : As an Angular developer, I need to create the Angular UI with an example routing.
   * :heavy_check_mark: Story #13 : (1) : As a developer, I need to research a grid or table control that is compatible with Angular 6.

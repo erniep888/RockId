@@ -4,7 +4,7 @@
 ## Description ##
 
 This document serves as the milestone plan for the implementation of RockId 1.0. The primary business stakeholder should review this list to confirm that all milestones are appropriate for the business. The primary technical owner should review the milestones to ensure that each is achievable.
-`
+
 ## 1.0 Milestones ##
 
 | Milestone | Feature | Target | Delivered | Status | Notes
