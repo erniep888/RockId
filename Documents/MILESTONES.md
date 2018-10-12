@@ -10,9 +10,9 @@ This document serves as the milestone plan for the implementation of RockId 1.0.
 | Milestone | Feature | Target | Delivered | Percentage | Notes
 |--|--|--|--|--|--|
 |M1|  |  09-30-2018  | 10-05-2018 |  | Infrastructure kickoff
-||[Infrastructure](EPICS-INFRASTRUCTURE.md)| | |45%| #7, #8, #37
+||[Infrastructure](EPICS-INFRASTRUCTURE.md)| | |45%| ~~#7~~, ~~#8~~, ~~#37~~
 |M2|  |  10-15-2018  |  |  | Initial UI
-||[Infrastructure](EPICS-INFRASTRUCTURE.md)| | |50%| #9, #10, #13
+||[Infrastructure](EPICS-INFRASTRUCTURE.md)| | |50%| ~~#9~~, ~~#10~~, ~~#13~~
 ||[Identify Rock](EPICS-IDENTIFY_ROCK.md)  | | |10%| #17, #19
 ||[All Actions](EPICS-ALL_ACTIONS.md)  | | |30%| #15
 |M3|  |  10-22-2018  |  |  | Capable of storing data
