@@ -14,7 +14,7 @@ This document serves as the milestone plan for the implementation of RockId 1.0.
 |M2 :runner: |  |  10-15-2018  |  |  | Initial UI
 ||[Infrastructure](EPICS-INFRASTRUCTURE.md)| | |50%| :heavy_check_mark: #9, :heavy_check_mark: #10, :heavy_check_mark: #13
 ||[Identify Rock](EPICS-IDENTIFY_ROCK.md)  | | |10%| :heavy_check_mark: #17, :runner: #19
-||[All Actions](EPICS-ALL_ACTIONS.md)  | | |30%| #15
+||[All Actions](EPICS-ALL_ACTIONS.md)  | | |30%| :runner: #15
 |M3 :zzz:|  |  10-22-2018  |  |  | Capable of storing data
 ||[Infrastructure](EPICS-INFRASTRUCTURE.md) | | |100%| #11, #12, #18
 ||[All Actions](EPICS-ALL_ACTIONS.md)  | | |40%| #35

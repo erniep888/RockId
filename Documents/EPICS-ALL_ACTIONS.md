@@ -16,7 +16,7 @@ All actions are tracked and displayed for all authenticated users.
 ## Epics -> Stories ##
 
 * Epic #7 : (13) : Display a table of actions taken by all users
-  * Story #15 : (3) : As a developer, I want to devise an event creation mechanism that will log actions to the actions table.
+  * :runner: Story #15 : (3) : As a developer, I want to devise an event creation mechanism that will log actions to the actions table.
   * Story #16 : (2) : As a user, I want to see the user login action logged.
   * Story #32 : (2) : As a user, I want to see the user logout action logged.
   * Story #33 : (1) : As a user, I want to see the user added action logged.
