@@ -6,9 +6,9 @@ Definition
 
 A demonstration application for Feature Driven Development, Angular, IIS, SQL Server, and ASP.NET Core 2 Web API.
 
-- [Purpose](Documents/PURPOSE.md)
-- [Technologies Used](Documents/TECHNOLOGIES.md)
-- [Features](Documents/FEATURES.md)
+- :question: [Purpose](Documents/PURPOSE.md)
+- :factory: [Technologies Used](Documents/TECHNOLOGIES.md)
+- :notebook_with_decorative_cover: [Features](Documents/FEATURES.md)
 
   - [Epics - Infrastructure](Documents/EPICS-INFRASTRUCTURE.md)
   - [Epics - User Security](Documents/EPICS-USER_SECURITY.md)
@@ -16,15 +16,15 @@ A demonstration application for Feature Driven Development, Angular, IIS, SQL Se
   - [Epics - All Action History](Documents/EPICS-ALL_ACTIONS.md)
   - [Epics - Identify Rock](Documents/EPICS-IDENTIFY_ROCK.md)
 
-- [Milestone Plan](Documents/MILESTONES.md)
-- [Architecture](Documents/ARCHITECTURE.md)
-- [Implementation](Documents/IMPLEMENTATION.md)
+- :triangular_flag_on_post: [Milestone Plan](Documents/MILESTONES.md)
+- :triangular_ruler: [Architecture](Documents/ARCHITECTURE.md)
+- :construction_worker: [Implementation](Documents/IMPLEMENTATION.md)
 
 Repository Structure
 --------------------
 
-- [Documents](Documents) - Contains all documentation for the entire application.
-- [Source](Source) - Contains all of the application source code
+- :memo: [Documents](Documents) - Contains all documentation for the entire application.
+- :computer: [Source](Source) - Contains all of the application source code
 
   - [UI](Source/UI/rock-id) - Contains the user interface implemented in Angular 6
   - [Api](Source/Api) - Contains the ASP.NET Core Web API.
