@@ -41,7 +41,7 @@ An authenticated user can step through the process to identify a rock.
 * Epic #8 : (13) : Create the reusable components of the question, answer, and result process (QARP)
   * :heavy_check_mark: Story #17 : (3) : As a developer, I need to research and document the implementation strategy for the question, answer, and result process (QARP).
   * Story #18 : (2) : As a developer, I need to create the tables required for QARP.
-  * Story #19 : (2) : As a user, I need to be asked about the grain size within the rock as the first question.
+  * :runner: Story #19 : (2) : As a user, I need to be asked about the grain size within the rock as the first question.
   * Story #31 : (1) : As a user, I want to know that Mixed Fine and Coarse grained and Medium to Coarse grained are not yet implemented.
 * Epic #9 : (5) : Implement the Glassy grain size
   * Story #20 : (2) : As a user, I need to identify Quartz.
