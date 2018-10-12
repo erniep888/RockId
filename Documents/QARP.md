@@ -13,7 +13,7 @@ QARP stands for the **Q**uestion, **A**nswer, and **R**esult **P**rocess that is
 
 ## Solution ##
 
-The solution is a tree data structure whose nodes can be either a question or an answer.  An answer node is a terminating node while a question node will have one or more child nodes.  The table structure is as follows:
+The solution is a tree data structure whose nodes can be either a question or an answer.  An answer node is a terminating node while a question node has one or more child nodes.  The table structure is as follows:
 
 **QARP Table**
 ``` 
