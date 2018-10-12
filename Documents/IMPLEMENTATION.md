@@ -11,3 +11,11 @@ The styling of the site is built on top of Bootstrap 4 CSS.  Angular 6 adds nati
 ### Widgets ###
 
 It is not yet clear if a third party library such as Bootstrap widgets is necessary.  Also, the data tables planned for RockId may not need a lot of features (sort and pagination only).
+
+## API ##
+
+The back end is .NET Core 2 Web Api.
+
+### QARP ###
+
+Details about QARP may be found here ([QARP](QARP.md)).
