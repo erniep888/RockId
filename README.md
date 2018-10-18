@@ -6,9 +6,9 @@ Definition
 
 A demonstration application for Feature Driven Development, Angular, IIS, SQL Server, and ASP.NET Core 2 Web API.
 
-- :question: [Purpose](Documents/PURPOSE.md)
-- :factory: [Technologies Used](Documents/TECHNOLOGIES.md)
-- :notebook_with_decorative_cover: [Features](Documents/FEATURES.md)
+- :grey_question: [Purpose](Documents/PURPOSE.md)
+- :globe_with_meridians: [Technologies Used](Documents/TECHNOLOGIES.md)
+- :page_with_curl: [Features](Documents/FEATURES.md)
 
   - [Epics - Infrastructure](Documents/EPICS-INFRASTRUCTURE.md)
   - [Epics - User Security](Documents/EPICS-USER_SECURITY.md)

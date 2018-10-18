@@ -1,4 +1,4 @@
-# RockId Architecture #
+# :triangular_ruler: RockId Architecture #
 
 ## Description ##
 
