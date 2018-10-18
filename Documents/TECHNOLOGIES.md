@@ -1,4 +1,4 @@
-# Angular 6, .NET CORE Web API, SQL Server, Elastic Search Stack #
+# :globe_with_meridians: Angular 6, .NET CORE Web API, SQL Server, Elastic Search Stack #
 
 The initial implementation for the RockId is as follows:
 
