@@ -6,7 +6,7 @@ Definition
 
 A demonstration application for Feature Driven Development, Angular, IIS, SQL Server, and ASP.NET Core 2 Web API.
 
-- :question: [Purpose](Documents/PURPOSE.md)
+- :grey_question: [Purpose](Documents/PURPOSE.md)
 - :factory: [Technologies Used](Documents/TECHNOLOGIES.md)
 - :notebook_with_decorative_cover: [Features](Documents/FEATURES.md)
 
