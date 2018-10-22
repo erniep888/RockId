@@ -1,6 +1,8 @@
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb bg-white">
-    <li class="breadcrumb-item"><a href="#">Rocks</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Identified Rocks</li>
+    <li *ngFor="let breadcrumbItem of _breadcrumbCollection" class="breadcrumb-item" [ngClass]="{'active' : isActiveBreadcrumb(breadcrumbItem)}" >
+      <a *ngIf="!isActiveBreadcrumb(breadcrumbItem)" [routerLink]="[ breadcrumbItem.pathFromRoot ]">{{ breadcrumbItem.breadcrumbTitle }}</a>
+      <span *ngIf="isActiveBreadcrumb(breadcrumbItem)">{{ breadcrumbItem.breadcrumbTitle }}</span>
+    </li>
   </ol>
 </nav>
