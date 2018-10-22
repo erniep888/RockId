@@ -57,6 +57,10 @@ An authenticated user can step through the process to identify a rock.
   * Story #29 : (0.5) : As a user, I need to identify Shale.
   * Story #30 : (0.5) : As a user, I need to identify Serpentine.
 
+## Screenshots ##
+
+![What is the Grain Size?](https://github.com/erniep888/RockId/blob/master/Documents/screenshots/IdentifyNewRock-0.3.0.png?raw=true)
+
 ## Wire Frames ##
 
 ![What is the Grain Size?](https://github.com/erniep888/RockId/blob/master/Documents/wireframe-png/Identify%20Rock-GrainSize.png?raw=true)
