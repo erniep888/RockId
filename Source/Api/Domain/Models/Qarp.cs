@@ -12,7 +12,7 @@ namespace RockId.Domain.Models
     {
         public Guid Id { get; set; }
 
-        public String Question { get; set; }
+        public string Question { get; set; }
 
         public Guid Rock { get; set; }
         public List<Qarp> Choices { get; set; }

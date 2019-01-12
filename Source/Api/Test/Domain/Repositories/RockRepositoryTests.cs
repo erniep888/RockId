@@ -14,7 +14,7 @@ namespace RockId.Test.Domain.Repositories
     {
         [Theory]
         [AutoMoqData]
-        public void ShouldAllowFindingByName(String name, IRockRepository sut)
+        public void ShouldAllowFindingByName(string name, IRockRepository sut)
         {
             Rock rock = sut.FindByName(name);
             Assert.NotNull(rock);
