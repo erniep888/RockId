@@ -7,7 +7,7 @@ namespace RockId.Domain.Models
     public abstract class Insertable
     {
         public DateTime CreateDateUtc { get; set; }
-        public String CreatedBy { get; set; }
+        public string CreatedBy { get; set; }
 
     }
 }

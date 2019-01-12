@@ -35,7 +35,7 @@ Prerequisite
 ------------
 
 - [Angular 6](https://angular.io/)
-- [ASP.NET Core 2 Web API](https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-2.1)
+- [ASP.NET Core 2.2 Web API](https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-2.2)
 - [SQL Server 2017](https://docs.microsoft.com/en-us/sql/sql-server/install/planning-a-sql-server-installation?view=sql-server-2017)
 - [Identity Server Creation](Documents/IDENTITYSERVERCREATION.md)
 
@@ -57,7 +57,8 @@ Development Run
 Unit Test
 ---------
 
-- TBD
+- SUT is System Under Test
+- xunit, Moq, and AutoFixture are used to provide a testing framework, an injection framework, and a mock data framework respectively.
 
 End-to-End Test
 ---------------

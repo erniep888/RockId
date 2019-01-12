@@ -7,6 +7,6 @@ namespace RockId.Domain.Models
     public abstract class Updatable : Insertable
     {
         public DateTime UpdateDateUtc { get; set; }
-        public String UpdatedBy { get; set; }
+        public string UpdatedBy { get; set; }
     }
 }

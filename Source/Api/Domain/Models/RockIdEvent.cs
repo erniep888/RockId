@@ -7,7 +7,7 @@ namespace RockId.Domain.Models
     public class RockIdEvent : Insertable
     {
         public Guid Guid { get; set; }
-        public String Type { get; set; }
-        public String Description { get; set; }
+        public string Type { get; set; }
+        public string Description { get; set; }
     }
 }
