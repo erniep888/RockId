@@ -14,7 +14,7 @@ It is not yet clear if a third party library such as Bootstrap widgets is necess
 
 ## API ##
 
-The back end is .NET Core 2 Web Api.
+The back end is a set of .NET Core 2 Web Api microservices deployed on linux Docker containers.
 
 ### QARP ###
 
