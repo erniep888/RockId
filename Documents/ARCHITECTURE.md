@@ -4,15 +4,19 @@
 
 This application adheres to a layered architecture intended to abstract dependencies in order to increase modularity and testability. A layer can only call into a layer that sits below it.
 
-## Microservices ##
-* [sql-qarp](https://cloud.docker.com/repository/docker/erniep888/sql-qarp) - provides the sql server 2017 database for the QARP microservice.
+## Microservice Images ##
+* [sql-qarp](https://cloud.docker.com/repository/docker/erniep888/sql-qarp) - provides the development sql server 2017 database server for the QARP microservices.  Each microservice uses its own database on the server.
 
-## Application Layers ##
+## Functional Grouping ##
 
-1. API
-    * This represents the API Gateway and all microservices that make up the backend features of the application.  In general, all Web API's are made up of a set of RESTful controllers that return JSON payloads.  Each controller yields to a service class in the Application layer which is where the business logic begins in the microservice backend.
-2. Application
-      * This represents the services that relate to the application requirements directly.  The API controllers call the services in the Application layer by passing along the parameters from the controller and expecting a DTO from the service in response.  
+The primary functions of RockId are 
+
+## Service Application Layers ##
+
+1. Controller
+    * This provides the web api controllers that respond to requests for the service.
+2. Dto
+      * Provides the data transfer objects that are used when the model object is not sufficient.  
 3. Domain
     * Contains the data model and services that are invariant of use cases.  
 4. Infrastructure
