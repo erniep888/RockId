@@ -1,4 +1,4 @@
-# RockId Epics - Display All Identified Rocks as a Rock Collection#
+# RockId Epics - Rock Collection #
 
 ## Description ##
 
