@@ -11,7 +11,7 @@ A demonstration application for [Feature Driven Development](http://agilemodelin
 - :page_with_curl: [Features](Documents/FEATURES.md)
   - [Epics - Research](Documents/EPICS-RESEARCH.md)
   - [Epics - User Security](Documents/EPICS-USER_SECURITY.md)
-  - [Epics - All Identified Rocks](Documents/EPICS-ALL_ROCKS.md)
+  - [Epics - Rock Collection](Documents/EPICS-ROCK_COLLECTION.md)
   - [Epics - Event Logger](Documents/EPICS-EVENT_LOGGER.md)
   - [Epics - Identify Rock](Documents/EPICS-IDENTIFY_ROCK.md)
 

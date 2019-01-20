@@ -1,12 +1,12 @@
-# RockId Epics - Display All Identified Rocks #
+# RockId Epics - Rock Collection #
 
 ## Description ##
 
-All rocks that have been identified should be visible to all other authenticated users.
+All rocks that have been identified should be visible to all other authenticated users as a rock collection.
 
 ## Solution ##
 
-* Once a rock has been successfully identified, it will be displayed in a list displayed in the order of completion date.
+* Once a rock has been successfully identified, it will be displayed in a rock collection displayed in the order of completion date.
 * All identified rocks will be displayed in one page.
 
 ## Epics -> Stories ##
@@ -17,4 +17,4 @@ All rocks that have been identified should be visible to all other authenticated
 
 ## Wire Frame ##
 
-![All Rocks Identified](https://github.com/erniep888/RockId/blob/master/Documents/wireframe-png/Rocks.png?raw=true)
+![Rock Collection](https://github.com/erniep888/RockId/blob/master/Documents/wireframe-png/Rocks.png?raw=true)
