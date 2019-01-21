@@ -1,4 +1,4 @@
-# RockId Epics - Infrastructure #
+# RockId Epics - Research #
 
 ## Description ##
 

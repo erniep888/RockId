@@ -1,4 +1,4 @@
-# RockId Epics - Identify Rock #
+# RockId Epics - Identify Rock (QARP) #
 
 ## Description ##
 

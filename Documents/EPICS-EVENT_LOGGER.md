@@ -1,4 +1,4 @@
-# RockId Epics - Display All Action History #
+# RockId Epics - Event Logger #
 
 ## Description ##
 
