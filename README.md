@@ -34,7 +34,7 @@ My team uses this application to brainstorm and share ideas before committing to
 
   - [UI](Source/UI/rock-id) - Contains the user interface implemented in Angular 7
   - [Api Gateway](Source/ApiGateway) - Contains the API Gateway that enables a single entry point for all api calls to the backend among other [benefits](https://microservices.io/patterns/apigateway.html).
-  - [Service - QARP Glassy Rock](Source/Service/QARP/GlassyRock) - Contains the microservice api that leverages QARP to identify glassy rock types.
+  - [Service - QARP Glassy Rock](Source/Service/Qarp/Qarp.GlassyRock) - Contains the microservice api that leverages QARP to identify glassy rock types.
   - [Service - Identified Rock](Source/Service/IdentifiedRock) - Contains the microservice api that allows identified rocks to be searched, edited, and removed.
   - [Service - Event Logger](Source/Service/EventLogger) - Contains the microservice api that allows all other services to log specific events and actions.
   - [Service - Identity](Source/Service/Identity) - This microservice is an identity provider implemented with IdentityServer 4.
