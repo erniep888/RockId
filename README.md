@@ -121,7 +121,7 @@ My team uses this application to brainstorm and share ideas before committing to
 | Milestone | Feature | Target | Delivered | Status | Notes
 |--|--|--|--|--|--|
 |M1  :checkered_flag: |  |  09-30-2018  | 10-05-2018 |  | Research kickoff
-||[Research/Planning](documents/EPICS-RESEARCH.md)| | |45%| :heavy_check_mark: #7, :heavy_check_mark: #8, :heavy_check_mark: #37
+||[Research/Planning](/documents/EPICS-RESEARCH.md)| | |45%| :heavy_check_mark: #7, :heavy_check_mark: #8, :heavy_check_mark: #37
 |M2 :checkered_flag: |  |  10-15-2018  | 10-22-2018 |  | Initial UI
 ||[Research/Planning](documents/EPICS-RESEARCH.md)| | |50%| :heavy_check_mark: #9, :heavy_check_mark: #10, :heavy_check_mark: #13
 ||[Identify Rock](documents/EPICS-IDENTIFY_ROCK.md)  | | |10%| :heavy_check_mark: #17, :heavy_check_mark: #19
