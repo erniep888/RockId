@@ -23,7 +23,9 @@ My team uses this application to brainstorm and share ideas before committing to
 - :construction_worker: [Implementation](#implementation)
 - :computer: [Development](#development)
 
-## :open_file_folder: Project Structure ##
+---------------------------------------
+
+## Project Structure ##
 
 - [Documents](Documents) - Contains all documentation for the entire application.
 - [Source](Source) - Contains all of the application source code
