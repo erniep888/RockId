@@ -8,6 +8,8 @@ The application is called RockId.  It allows a person to identify a rock based o
 
 My team uses this application to brainstorm and share ideas before committing to architectural strategies for large applications that actually have significant personnel or monetary impact.  Anyone that reads this should feel free to clone, change, and contribute ideas for new approaches and/or technological solutions.
 
+---------------------------------------
+
 ## Index ##
 
 - :open_file_folder: [Project Structure](#project-structure)
@@ -38,6 +40,8 @@ My team uses this application to brainstorm and share ideas before committing to
   - [Service - Identity](Source/Service/Identity) - This microservice is an identity provider implemented with IdentityServer 4.
   - [EventBus](Source/BuildingBlock/EventBus) - Contains an event bus that leverages RabbitMQ in order to allow services to communicate in a loosely coupled manner.  
 
+---------------------------------------
+
 ## Requirements ##
 
 1. Allow a user to login.
@@ -52,6 +56,8 @@ My team uses this application to brainstorm and share ideas before committing to
 5. Identity Rock - allows a user to create a new rock identification.
 6. Search all identified rocks:
       * Show me a count of rocks that are igneous, metamorphic, or sedimentary.
+
+---------------------------------------
 
 ## Features Based On Requirements ##
 
@@ -108,6 +114,8 @@ My team uses this application to brainstorm and share ideas before committing to
        * Medium to Coarse
          * Not in release 1.0
 
+---------------------------------------
+
 ## Milestone Plan ##
 
 | Milestone | Feature | Target | Delivered | Status | Notes
@@ -131,6 +139,8 @@ My team uses this application to brainstorm and share ideas before committing to
 ||[Rock Collection](EPICS-ROCK_COLLECTION.md)  |  | |100%| #14, #36
 ||[Identify Rock](EPICS-IDENTIFY_ROCK.md)  |  | |100%| #28, #29, #30, #31
 ||[Event Logger](EPICS-EVENT_LOGGER.md)  |  | |100%| #35
+
+---------------------------------------
 
 ## Implementation ##
 
@@ -156,39 +166,41 @@ The primary functions of RockId are _Rock Identification_, _Rock Collection Mana
 
 * [QARP](Documents/QARP.md) - QARP stands for the **Q**uestion, **A**nswer, and **R**esult **P**rocess that is used to identify a rock specimen. 
 
-## :computer: Development ##
+---------------------------------------
+
+## Development ##
 
 ### Prerequisites ###
 
-- [Angular 7](https://angular.io/)
-- [ASP.NET Core 2.2 Web API](https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-2.2)
-- [Visual Studio 2017](https://visualstudio.microsoft.com/vs/)
-- [Docker Desktop](https://www.docker.com/products/docker-desktop)
+* [Angular 7](https://angular.io/)
+* [ASP.NET Core 2.2 Web API](https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-2.2)
+* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/)
+* [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
 ### Installation Steps ###
 
-- TBD - Once the application is capable of identifying a rock, this needs to be completed.
+* TBD - Once the application is capable of identifying a rock, this needs to be completed.
 
 ### Build ###
 
-- TBD - Once the application is capable of identifying a rock, this needs to be completed.
+* TBD - Once the application is capable of identifying a rock, this needs to be completed.
 
 ### Development Run ###
 
-- TBD - Once the application is capable of identifying a rock, this needs to be completed.
+* TBD - Once the application is capable of identifying a rock, this needs to be completed.
 
 ### Unit Test ###
 
-- SUT is System Under Test
-- xunit, Moq, and AutoFixture are used to provide a testing framework, an injection framework, and a mock data framework respectively.
+* SUT is System Under Test
+* xunit, Moq, and AutoFixture are used to provide a testing framework, an injection framework, and a mock data framework respectively.
 
 ### End-to-End Test ###
 
-- TBD - Once the application is capable of identifying a rock, this needs to be completed.
+* TBD - Once the application is capable of identifying a rock, this needs to be completed.
 
 ### All Tests ###
 
-- TBD - Once the application is capable of identifying a rock, this needs to be completed.
+* TBD - Once the application is capable of identifying a rock, this needs to be completed.
 
 ### Version ###
 
@@ -196,14 +208,14 @@ The primary functions of RockId are _Rock Identification_, _Rock Collection Mana
 
 ### Languages ###
 
-- [TypeScript 2.7](https://www.typescriptlang.org/)
-- [C# 7.3](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7-3)
+* [TypeScript 2.7](https://www.typescriptlang.org/)
+* [C# 7.3](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7-3)
 
 ### ChangeLog ###
 
-- 0.0.3
-  - Switching to a Docker Container development and deployment approach
-- 0.0.2
-  - Created features, epics, milestones, and wire frames
-- 0.0.1
-  - initial creation
+* 0.0.3
+  * Switching to a Docker Container development and deployment approach
+* 0.0.2
+  * Created features, epics, milestones, and wire frames
+* 0.0.1
+  * initial creation
