@@ -121,14 +121,14 @@ My team uses this application to brainstorm and share ideas before committing to
 | Milestone | Feature | Target | Delivered | Status | Notes
 |--|--|--|--|--|--|
 |M1  :checkered_flag: |  |  09-30-2018  | 10-05-2018 |  | Research kickoff
-||[Research/Planning](Documents/EPICS-RESEARCH.md)| | |45%| :heavy_check_mark: #7, :heavy_check_mark: #8, :heavy_check_mark: #37
+||[Research](Documents/EPICS-RESEARCH.md)| | |45%| :heavy_check_mark: #7, :heavy_check_mark: #8, :heavy_check_mark: #37
 |M2 :checkered_flag: |  |  10-15-2018  | 10-22-2018 |  | Initial UI
-||[Research/Planning](Documents/EPICS-RESEARCH.md)| | |50%| :heavy_check_mark: #9, :heavy_check_mark: #10, :heavy_check_mark: #13
+||[Research](Documents/EPICS-RESEARCH.md)| | |50%| :heavy_check_mark: #9, :heavy_check_mark: #10, :heavy_check_mark: #13
 ||[Identify Rock](Documents/EPICS-IDENTIFY_ROCK.md)  | | |10%| :heavy_check_mark: #17, :heavy_check_mark: #19
 |M3 :runner:|  |  01-25-2019  |  |  | Create the Event Logger microservice
 ||[Event Logger](Documents/EPICS-EVENT_LOGGER.md)  | | |30%| :runner: #15
 |M4 :zzz:|  |  02-02-2019  |  |  | Capable of storing data
-||[Research/Planning](Documents/EPICS-RESEARCH.md) | | |100%| #11, #12, #18
+||[Research](Documents/EPICS-RESEARCH.md) | | |100%| #11, #12, #18
 ||[Identify Rock](Documents/EPICS-IDENTIFY_ROCK.md)  | | |30%| #20, #21
 ||[Event Logger](Documents/EPICS-EVENT_LOGGER.md)  | | |40%| #35
 |M5 :zzz:|  |	02-17-2019	|  |  | User security
