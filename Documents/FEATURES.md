@@ -7,11 +7,11 @@ This document serves as the feature list that makes up the RockId application. T
 ## 1.0 Feature List ##
 
 1. User Security
-    * ***Detail:*** All users must be known to the system.
-    * ***Solution:***
-      * Anonymous user access is denied.
-      * All users must login in with an email address
-      * All users have a password that is 8 to 32 characters long and alphanumeric with special characters.
+* ***Detail:*** All users must be known to the system.
+* ***Solution:***
+** Anonymous user access is denied.
+** All users must login in with an email address
+** All users have a password that is 8 to 32 characters long and alphanumeric with special characters.
 2. Display All Rocks Identified
     * ***Detail:*** All rocks that have been identified should be visible to all other authenticated users.
     * ***Solution:***
