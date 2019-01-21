@@ -122,23 +122,24 @@ My team uses this application to brainstorm and share ideas before committing to
 |--|--|--|--|--|--|
 |M1  :checkered_flag: |  |  09-30-2018  | 10-05-2018 |  | Research kickoff
 ||[Research/Planning](documents/EPICS-RESEARCH.md)| | |45%| :heavy_check_mark: #7, :heavy_check_mark: #8, :heavy_check_mark: #37
-|M2 :runner: |  |  10-15-2018  |  |  | Initial UI
+|M2 :checkered_flag: |  |  10-15-2018  | 10-22-2018 |  | Initial UI
 ||[Research/Planning](documents/EPICS-RESEARCH.md)| | |50%| :heavy_check_mark: #9, :heavy_check_mark: #10, :heavy_check_mark: #13
 ||[Identify Rock](documents/EPICS-IDENTIFY_ROCK.md)  | | |10%| :heavy_check_mark: #17, :heavy_check_mark: #19
+|M3 :runner:|  |  01-25-2019  |  |  | Create the Event Logger microservice
 ||[Event Logger](documents/EPICS-EVENT_LOGGER.md)  | | |30%| :runner: #15
-|M3 :zzz:|  |  10-22-2018  |  |  | Capable of storing data
-||[Research/Planning](documents/documents/EPICS-RESEARCH.md) | | |100%| #11, #12, #18
 ||[Event Logger Actions](documents/EPICS-EVENT_LOGGER.md)  | | |40%| #35
-||[Identify Rock](documents/EPICS-IDENTIFY_ROCK.md)  | | |30%| #20, #21
-|M4 :zzz:|  |	11-11-2018	|  |  | User security
-||[User Security](documents/EPICS-USER_SECURITY.md) |  | |100%| #6, #5, #1, #2, #3, #4
 ||[Event Logger](documents/EPICS-EVENT_LOGGER.md)  |  | |90%| #16, #32, #33, #34
-|M5 :zzz:|  |	11-25-2018	|  |  | Identify rocks
+||[Event Logger](documents/EPICS-EVENT_LOGGER.md)  |  | |100%| #35
+|M4 :zzz:|  |  10-22-2018  |  |  | Capable of storing data
+||[Research/Planning](documents/documents/EPICS-RESEARCH.md) | | |100%| #11, #12, #18
+||[Identify Rock](documents/EPICS-IDENTIFY_ROCK.md)  | | |30%| #20, #21
+|M5 :zzz:|  |	11-11-2018	|  |  | User security
+||[User Security](documents/EPICS-USER_SECURITY.md) |  | |100%| #6, #5, #1, #2, #3, #4
+|M6 :zzz:|  |	11-25-2018	|  |  | Identify rocks
 ||[Identify Rock](documents/EPICS-IDENTIFY_ROCK.md)  |  | |80%| #22, #23, #24, #25, #26, #27
-|M6 :zzz:|  |	12-09-2018	|  |  | Display identified rocks
+|M7 :zzz:|  |	12-09-2018	|  |  | Display identified rocks
 ||[Rock Collection](documents/EPICS-ROCK_COLLECTION.md)  |  | |100%| #14, #36
 ||[Identify Rock](documents/EPICS-IDENTIFY_ROCK.md)  |  | |100%| #28, #29, #30, #31
-||[Event Logger](documents/EPICS-EVENT_LOGGER.md)  |  | |100%| #35
 
 ---------------------------------------
 
