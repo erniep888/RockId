@@ -184,7 +184,7 @@ The primary functions of RockId are _Rock Identification_, _Rock Collection Mana
 
 ### Build ###
 
-* RockId SQL Server image 
+* SQL Server development Docker image 
   * username: ```sa```
   * password: ```Mypasswordis1234```
   * ```Docker
@@ -193,6 +193,10 @@ The primary functions of RockId are _Rock Identification_, _Rock Collection Mana
   * Or, create an empty SQL Server image and add databases using RockId scripts
     ```Docker
     docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=MYpasswordis1234 -p 1434:1433 --name sql-qarp-20190118.2s -d mcr.microsoft.com/mssql/server:2017-latest
+    ```
+* Event Logger - RabbitMQ Docker image
+  * ```Docker
+    docker run -d --hostname rockid-mq --name rockid-mq -p 5672:5672 -p 8080:15672 rabbitmq:3-management
     ```
 
 ### Development Run ###
