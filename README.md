@@ -1,26 +1,29 @@
-RockId
-======
+# RockId #
 
-Definition
-----------
+## Definition ##
 
 A demonstration application for [Feature Driven Development](http://agilemodeling.com/essays/fdd.htm), [Microservice Architecture](https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/), [Angular](https://angular.io/), [SQL Server 2017 on Linux](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-overview?view=sql-server-2017), and [ASP.NET Core 2 Web API](https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-2.2).
 
-- :grey_question: [Purpose](Documents/PURPOSE.md)
-- :globe_with_meridians: [Technologies Used](Documents/TECHNOLOGIES.md)
-- :page_with_curl: [Features](Documents/FEATURES.md)
+The application is called RockId.  It allows a person to identify a rock based on responses to a series of questions and answers.  Each identified rock is placed in a rock collection where more information can be associated with the rock.  All significant events can be viewed by all users and all identified rocks can be viewed by all users.
+
+My team uses this application to brainstorm and share ideas before committing to architectural strategies for large applications that actually have significant personnel or monetary impact.  Anyone that reads this should feel free to clone, change, and contribute ideas for new approaches and/or technological solutions.
+
+## Index ##
+
+- :open_file_folder: [Project Structure](#project-structure)
+- :scroll: [Requirements](#requirements)
+- :page_with_curl: [Features Based On Requirements](#features-based-on-requirements)
   - [Epics - Research](Documents/EPICS-RESEARCH.md)
   - [Epics - User Security](Documents/EPICS-USER_SECURITY.md)
   - [Epics - Rock Collection](Documents/EPICS-ROCK_COLLECTION.md)
   - [Epics - Event Logger](Documents/EPICS-EVENT_LOGGER.md)
   - [Epics - Identify Rock](Documents/EPICS-IDENTIFY_ROCK.md)
 
-- :triangular_flag_on_post: [Milestone Plan](Documents/MILESTONES.md)
-- :triangular_ruler: [Architecture](Documents/ARCHITECTURE.md)
-- :construction_worker: [Implementation](Documents/IMPLEMENTATION.md)
+- :triangular_flag_on_post: [Milestone Plan](#milestone-plan)
+- :construction_worker: [Implementation](#implementation)
+- :gear: [Development](#development)
 
-Project Structure
------------------
+## Project Structure ##
 
 - :memo: [Documents](Documents) - Contains all documentation for the entire application.
 - :computer: [Source](Source) - Contains all of the application source code
@@ -33,58 +36,168 @@ Project Structure
   - [Service - Identity](Source/Service/Identity) - This microservice is an identity provider implemented with IdentityServer 4.
   - [EventBus](Source/BuildingBlock/EventBus) - Contains an event bus that leverages RabbitMQ in order to allow services to communicate in a loosely coupled manner.  
 
-Prerequisite
-------------
+## Requirements ##
+
+1. Allow a user to login.
+2. Display all the rocks that have been identified for and by all users.
+3. Display the history of all actions within the application (complete list follows):
+      * Rock identified
+      * User added
+      * User logged in
+4. The user landing page should be a dashboard that contains:
+      * My Rock Identification Count
+      * Total Rock Identification Count
+5. Identity Rock - allows a user to create a new rock identification.
+6. Search all identified rocks:
+      * Show me a count of rocks that are igneous, metamorphic, or sedimentary.
+
+## Features Based On Requirements ##
+
+1. User Security
+   * ***Detail:*** All users must be known to the system.
+   * ***Solution:***
+     * Anonymous user access is denied.
+     * All users must login in with an email address
+     * All users have a password that is 8 to 32 characters long and alphanumeric with special characters.
+2. Display All Rocks Identified
+   * ***Detail:*** All rocks that have been identified should be visible to all other authenticated users.
+   * ***Solution:***
+     * Once a rock has been successfully identified, it will be displayed in a list displayed in the order of completion date.
+     * All identified rocks will be displayed in one page.
+3. Display All Action History
+   * ***Detail:*** All actions are tracked and displayed for all authenticated users.
+   * ***Solution:***
+     * The following actions are tracked:
+       * Login
+       * Logout
+       * Rock identified
+       * User added
+     * All actions will be displayed in one page.
+4. Identify Rock
+   * ***Detail:*** An authenticated user can step through the process to identify a rock.
+   * ***Solution:***
+     * For 1.0, this feature only implements identification of glassy and fine-grained rocks. The authenticated user will answer questions to identity the rock.
+     * What is the grain size?
+       * Glassy (no visible grains)
+         * Is it light or dark?
+           * Light is Igneous - Quartz.
+           * Dark is Igneous - Obsidian
+       * Fine Grained (not easy to see grains)
+         * Can the rock be scratched by a knife?
+           * Yes, and it is dense and brittle - Sedimentary - Chert.
+           * No
+             * Is it light in color?
+               * Yes, with glossy grains - Metamorphic - Quartzite.
+               * Yes, with dull grains - Igneous - Felsite.
+               * No
+                 * Is it medium in color?
+                   * Yes - Igneous - Andesite.
+                   * No - It is dark in color.
+                     * Does it fizz with acid?
+                       * Yes, vigorously - Sedimentary - Limestone.
+                       * Yes, with difficulty or with rock powder - Sedimentary - Dolomite.
+                       * No
+                         * Does it have layers?
+                           * Yes, it splits easily into thin smooth sheets - Metamorphic - Slate
+                           * Yes, it does not split easily - Metamorphic - Shale
+                           * No, it does have slippery feel colored green to black - Metamorphic - Serpentine
+       * Mixed Fine and Coarse
+         * Not in release 1.0
+       * Medium to Coarse
+         * Not in release 1.0
+
+## Milestone Plan ##
+
+| Milestone | Feature | Target | Delivered | Status | Notes
+|--|--|--|--|--|--|
+|M1  :checkered_flag: |  |  09-30-2018  | 10-05-2018 |  | Research kickoff
+||[Infrastructure](EPICS-RESEARCH.md)| | |45%| :heavy_check_mark: #7, :heavy_check_mark: #8, :heavy_check_mark: #37
+|M2 :runner: |  |  10-15-2018  |  |  | Initial UI
+||[Infrastructure](EPICS-RESEARCH.md)| | |50%| :heavy_check_mark: #9, :heavy_check_mark: #10, :heavy_check_mark: #13
+||[Identify Rock](EPICS-IDENTIFY_ROCK.md)  | | |10%| :heavy_check_mark: #17, :heavy_check_mark: #19
+||[Event Logger](EPICS-EVENT_LOGGER.md)  | | |30%| :runner: #15
+|M3 :zzz:|  |  10-22-2018  |  |  | Capable of storing data
+||[Infrastructure](EPICS-RESEARCH.md) | | |100%| #11, #12, #18
+||[Event Logger Actions](EPICS-EVENT_LOGGER.md)  | | |40%| #35
+||[Identify Rock](EPICS-IDENTIFY_ROCK.md)  | | |30%| #20, #21
+|M4 :zzz:|  |	11-11-2018	|  |  | User security
+||[User Security](EPICS-USER_SECURITY.md) |  | |100%| #6, #5, #1, #2, #3, #4
+||[Event Logger](EPICS-EVENT_LOGGER.md)  |  | |90%| #16, #32, #33, #34
+|M5 :zzz:|  |	11-25-2018	|  |  | Identify rocks
+||[Identify Rock](EPICS-IDENTIFY_ROCK.md)  |  | |80%| #22, #23, #24, #25, #26, #27
+|M6 :zzz:|  |	12-09-2018	|  |  | Display identified rocks
+||[Rock Collection](EPICS-ROCK_COLLECTION.md)  |  | |100%| #14, #36
+||[Identify Rock](EPICS-IDENTIFY_ROCK.md)  |  | |100%| #28, #29, #30, #31
+||[Event Logger](EPICS-EVENT_LOGGER.md)  |  | |100%| #35
+
+## Implementation ##
+
+### Microservice Images ###
+* [sql-qarp](https://cloud.docker.com/repository/docker/erniep888/sql-qarp) - provides the development sql server 2017 database server for the [QARP](Documents/QARP.md) microservices.  Each microservice uses its own database on the server.
+
+### Functional Grouping ###
+
+The primary functions of RockId are _Rock Identification_, _Rock Collection Management_, _Event Logging_, and _User Security_.
+
+### Service Application Layers ###
+
+1. Controller
+   * This provides the web api controllers that respond to requests for the service.
+2. Dto
+   * Provides the data transfer objects that are used when the model object is not sufficient.  
+3. Domain
+   * Contains the data model and services that are invariant of use cases.  
+4. Infrastructure
+   * Contains the ORM, external web services, security API, logging, tracing, IoC containers, email, caching, etc.
+
+### Concepts ###
+
+* [QARP](Documents/QARP.md) - QARP stands for the **Q**uestion, **A**nswer, and **R**esult **P**rocess that is used to identify a rock specimen. 
+
+## Development ##
+
+### Prerequisites ###
 
 - [Angular 7](https://angular.io/)
 - [ASP.NET Core 2.2 Web API](https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-2.2)
 - [Visual Studio 2017](https://visualstudio.microsoft.com/vs/)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
-Install
--------
+### Installation Steps ###
 
-- TBD
+- TBD - Once the application is capable of identifying a rock, this needs to be completed.
 
-Build
--------
+### Build ###
 
-- TBD
+- TBD - Once the application is capable of identifying a rock, this needs to be completed.
 
-Development Run
----------------
+### Development Run ###
 
-- TBD
+- TBD - Once the application is capable of identifying a rock, this needs to be completed.
 
-Unit Test
----------
+### Unit Test ###
 
 - SUT is System Under Test
 - xunit, Moq, and AutoFixture are used to provide a testing framework, an injection framework, and a mock data framework respectively.
 
-End-to-End Test
----------------
+### End-to-End Test ###
 
-- TBD
+- TBD - Once the application is capable of identifying a rock, this needs to be completed.
 
-All Tests
----------
+### All Tests ###
 
-- TBD
+- TBD - Once the application is capable of identifying a rock, this needs to be completed.
 
-Version
--------
+### Version ###
 
 0.0.3
 
-Language
---------
+### Languages ###
 
 - [TypeScript 2.7](https://www.typescriptlang.org/)
 - [C# 7.3](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7-3)
 
-ChangeLog
----------
+### ChangeLog ###
 
 - 0.0.3
   - Switching to a Docker Container development and deployment approach
