@@ -15,7 +15,9 @@ namespace RockId.EventBus.Test
             Handled = false;
         }
 
+#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
         public async Task Handle(TestIntegrationEvent @event)
+#pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
         {
             Handled = true;
         }
