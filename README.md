@@ -187,13 +187,13 @@ The primary functions of RockId are _Rock Identification_, _Rock Collection Mana
 * RockId SQL Server image 
   * username: ```sa```
   * password: ```Mypasswordis1234```
-```Docker
-docker run --name sql-qarp-20190118.2 -d -p 1434:1433 erniep888/sql-qarp
-```
-* Or, create an empty SQL Server image and add databases using RockId scripts
-```Docker
-docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=MYpasswordis1234 -p 1434:1433 --name sql-qarp-20190118.2s -d mcr.microsoft.com/mssql/server:2017-latest
-```
+  * ```Docker
+    docker run --name sql-qarp-20190118.2 -d -p 1434:1433 erniep888/sql-qarp
+    ```
+  * Or, create an empty SQL Server image and add databases using RockId scripts
+    ```Docker
+    docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=MYpasswordis1234 -p 1434:1433 --name sql-qarp-20190118.2s -d mcr.microsoft.com/mssql/server:2017-latest
+    ```
 
 ### Development Run ###
 
