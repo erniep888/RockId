@@ -11,8 +11,8 @@ My team uses this application to brainstorm and share ideas before committing to
 ## Index ##
 
 - :open_file_folder: [Project Structure](#project-structure)
-- :scroll: [Requirements](#requirements)
-- :page_with_curl: [Features Based On Requirements](#features-based-on-requirements)
+- :memo: [Requirements](#requirements)
+- :straight_ruler: [Features Based On Requirements](#features-based-on-requirements)
   - [Epics - Research](Documents/EPICS-RESEARCH.md)
   - [Epics - User Security](Documents/EPICS-USER_SECURITY.md)
   - [Epics - Rock Collection](Documents/EPICS-ROCK_COLLECTION.md)
@@ -21,12 +21,12 @@ My team uses this application to brainstorm and share ideas before committing to
 
 - :triangular_flag_on_post: [Milestone Plan](#milestone-plan)
 - :construction_worker: [Implementation](#implementation)
-- :gear: [Development](#development)
+- :computer: [Development](#development)
 
-## Project Structure ##
+## :open_file_folder: Project Structure ##
 
-- :memo: [Documents](Documents) - Contains all documentation for the entire application.
-- :computer: [Source](Source) - Contains all of the application source code
+- [Documents](Documents) - Contains all documentation for the entire application.
+- [Source](Source) - Contains all of the application source code
 
   - [UI](Source/UI/rock-id) - Contains the user interface implemented in Angular 7
   - [Api Gateway](Source/ApiGateway) - Contains the API Gateway that enables a single entry point for all api calls to the backend among other [benefits](https://microservices.io/patterns/apigateway.html).
@@ -154,7 +154,7 @@ The primary functions of RockId are _Rock Identification_, _Rock Collection Mana
 
 * [QARP](Documents/QARP.md) - QARP stands for the **Q**uestion, **A**nswer, and **R**esult **P**rocess that is used to identify a rock specimen. 
 
-## Development ##
+## :computer: Development ##
 
 ### Prerequisites ###
 
