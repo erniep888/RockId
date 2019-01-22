@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using EventLogger.Model;
+using EventLogger.Models;
+using EventLogger.Repositories;
+using EventLogger.Repositories.Implementations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +32,8 @@ namespace EventLogger
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             
             services.AddDbContext<EventLoggerContext>(options => options.UseSqlServer(Configuration["ConnectionString"]));
+
+            services.AddTransient<IEventLoggerRepository, EventLoggerRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

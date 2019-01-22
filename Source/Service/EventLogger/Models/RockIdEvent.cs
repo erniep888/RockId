@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EventLogger.Model
+namespace EventLogger.Models
 {
     public class RockIdEvent
     {
