@@ -198,6 +198,13 @@ The primary functions of RockId are _Rock Identification_, _Rock Collection Mana
   * ```Docker
     docker run -d --hostname rockid-mq --name rockid-mq -p 5672:5672 -p 8080:15672 rabbitmq:3-management
     ```
+  * From the PackageManager Console run the following:
+    ```Powershell
+    EntityFrameworkCore\Update-Database
+    ```
+  * ```Powershell
+    EntityFrameworkCore\Add-Migration InitialCreate
+    ```
 
 ### Development Run ###
 

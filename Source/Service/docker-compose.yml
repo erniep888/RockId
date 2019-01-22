@@ -11,3 +11,10 @@ services:
     build:
       context: .
       dockerfile: Qarp/Qarp.GlassyRock/Dockerfile
+
+  eventlogger:
+    image: ${DOCKER_REGISTRY-}eventlogger
+    build:
+      context: .
+      dockerfile: EventLogger/Dockerfile
+
