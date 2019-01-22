@@ -7,6 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventLogger", "EventLogger\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qarp.GlassyRock", "Qarp\Qarp.GlassyRock\Qarp.GlassyRock.csproj", "{D511C83C-4E5A-4BBB-A33F-A893E033CAA6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus", "..\BuildingBlock\EventBus\EventBus.csproj", "{9BD756B3-07EA-408C-9F62-B5B53A35F385}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.RabbitMQ", "..\BuildingBlock\EventBus.RabbitMQ\EventBus.RabbitMQ.csproj", "{4D1FCF1A-0262-4969-B76A-781B8D468A05}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.Test", "..\BuildingBlock\EventBus.Test\EventBus.Test.csproj", "{2508B097-686C-4616-9E63-5BB9EAD7093A}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{76B2DF01-34D5-4A5B-9584-D85C1457328A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +29,22 @@ Global
 		{D511C83C-4E5A-4BBB-A33F-A893E033CAA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D511C83C-4E5A-4BBB-A33F-A893E033CAA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D511C83C-4E5A-4BBB-A33F-A893E033CAA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BD756B3-07EA-408C-9F62-B5B53A35F385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD756B3-07EA-408C-9F62-B5B53A35F385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD756B3-07EA-408C-9F62-B5B53A35F385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD756B3-07EA-408C-9F62-B5B53A35F385}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D1FCF1A-0262-4969-B76A-781B8D468A05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D1FCF1A-0262-4969-B76A-781B8D468A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D1FCF1A-0262-4969-B76A-781B8D468A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D1FCF1A-0262-4969-B76A-781B8D468A05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2508B097-686C-4616-9E63-5BB9EAD7093A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2508B097-686C-4616-9E63-5BB9EAD7093A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2508B097-686C-4616-9E63-5BB9EAD7093A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2508B097-686C-4616-9E63-5BB9EAD7093A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76B2DF01-34D5-4A5B-9584-D85C1457328A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76B2DF01-34D5-4A5B-9584-D85C1457328A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76B2DF01-34D5-4A5B-9584-D85C1457328A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76B2DF01-34D5-4A5B-9584-D85C1457328A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

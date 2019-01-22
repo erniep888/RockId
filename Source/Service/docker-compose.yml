@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  sql.data:
+    image: microsoft/mssql-server-linux:2017-latest
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+
+  qarp.glassyrock:
+    image: ${DOCKER_REGISTRY-}qarpglassyrock
+    build:
+      context: .
+      dockerfile: Qarp/Qarp.GlassyRock/Dockerfile
