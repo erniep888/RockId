@@ -14,10 +14,11 @@ namespace EventLogger.Migrations
                 {
                     RockIdEventId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    EventTitle = table.Column<string>(nullable: true),
-                    EventSource = table.Column<string>(nullable: true),
+                    EventTitle = table.Column<string>(nullable: false),
+                    EventSource = table.Column<string>(nullable: false),
                     EventDateTimeUTC = table.Column<DateTime>(nullable: false),
-                    User = table.Column<string>(nullable: true)
+                    EventStoredDateTimeUTC = table.Column<DateTime>(nullable: false),
+                    User = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -26,8 +27,8 @@ namespace EventLogger.Migrations
 
             migrationBuilder.InsertData(
                 table: "Events",
-                columns: new[] { "RockIdEventId", "EventTitle", "EventSource", "EventDateTimeUTC", "User" },
-                values: new object[] { 1, "Initial run event.", "Migration", DateTime.UtcNow, "System" });
+                columns: new[] { "RockIdEventId", "EventTitle", "EventSource", "EventDateTimeUTC", "EventStoredDateTimeUTC", "User" },
+                values: new object[] { 1, "Initial run event.", "Migration", DateTime.UtcNow, DateTime.UtcNow, "System" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

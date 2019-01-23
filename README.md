@@ -204,7 +204,7 @@ The primary functions of RockId are _Rock Identification_, _Rock Collection Mana
     ```
     ```Powershell
     EntityFrameworkCore\Update-Database -StartupProject EventLogger
-    ```
+    ```    
 
 ### Development Run ###
 

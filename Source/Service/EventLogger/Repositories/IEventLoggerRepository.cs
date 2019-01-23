@@ -9,6 +9,6 @@ namespace EventLogger.Repositories
     public interface IEventLoggerRepository
     {
         List<RockIdEvent> FindAll();
-        void Save();
+        RockIdEvent Save(RockIdEvent rockIdEvent);
     }
 }
