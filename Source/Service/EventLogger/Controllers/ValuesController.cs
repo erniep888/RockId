@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EventLogger.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EventLogger.Controllers
@@ -10,11 +11,22 @@ namespace EventLogger.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        IEventLoggerRepository _eventLoggerRepository;
+        public ValuesController(IEventLoggerRepository eventLoggerRepository)
         {
-            return new string[] { "value1", "value2" };
+            _eventLoggerRepository = eventLoggerRepository;
+        }
+
+        // GET api/values
+        //[HttpGet]
+        //public ActionResult<IEnumerable<string>> Get()
+        //{
+        //    return new string[] { "value1", "value2" };
+        //}
+        [HttpGet]
+        public JsonResult Get()
+        {
+            return new JsonResult(_eventLoggerRepository.FindAll());
         }
 
         // GET api/values/5
