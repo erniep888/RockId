@@ -23,6 +23,11 @@ namespace EventLogger.Migrations
                 {
                     table.PrimaryKey("PK_Events", x => x.RockIdEventId);
                 });
+
+            migrationBuilder.InsertData(
+                table: "Events",
+                columns: new[] { "RockIdEventId", "EventTitle", "EventSource", "EventDateTimeUTC", "User" },
+                values: new object[] { 1, "Initial run event.", "Migration", DateTime.UtcNow, "System" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
