@@ -20,9 +20,11 @@ namespace EventLogger.Repositories.Implementations
             return _eventLoggerContext.Events.ToList<RockIdEvent>();
         }
 
-        public void Save()
+        public RockIdEvent Save(RockIdEvent rockIdEvent)
         {
+            var savedEvent = _eventLoggerContext.Add(rockIdEvent);
             _eventLoggerContext.SaveChanges();
+            return savedEvent.Entity;
         }
     }
 }
