@@ -31,7 +31,10 @@ namespace EventLogger
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             
-            services.AddDbContext<EventLoggerContext>(options => options.UseSqlServer(Configuration["ConnectionString"]));
+
+            var connectionString = Configuration.GetConnectionString("runtimeContextConnection");
+
+            services.AddDbContext<EventLoggerContext>(options => options.UseSqlServer(connectionString));
 
             services.AddTransient<IEventLoggerRepository, EventLoggerRepository>();
         }
