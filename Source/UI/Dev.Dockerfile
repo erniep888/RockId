@@ -9,7 +9,7 @@ EXPOSE $PORT
 
 WORKDIR /app
 
-RUN npm install -g @angular/cli
+RUN npm install -g @angular/cli@6.2.9
 
 RUN npm install
 
