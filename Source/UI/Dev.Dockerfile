@@ -10,7 +10,3 @@ EXPOSE $PORT
 WORKDIR /app
 
 RUN npm install -g @angular/cli@6.2.9
-
-RUN npm install
-
-ENTRYPOINT [ "ng", "serve", "--host", "0.0.0.0", "--poll", "1000", "--liveReload=true" ]
