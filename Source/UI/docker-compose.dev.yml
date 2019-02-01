@@ -1,0 +1,15 @@
+version: '3.5'
+
+services:
+
+  erniep888angular-cli:
+    container_name: angular-cli
+    image: erniep888/angular-cli
+    command: bash -c "cd /app && yarn install && ng serve --host 0.0.0.0 --poll 1000 --liveReload=true"
+    build:
+      context: .
+      dockerfile: Dev.Dockerfile
+    volumes:
+      - './rock-id:/app'
+    ports:
+      - '4200:4200'    
