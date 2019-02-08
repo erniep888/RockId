@@ -116,33 +116,6 @@ My team uses this application to brainstorm and share ideas before committing to
 
 ---------------------------------------
 
-## Milestone Plan ##
-
-| Milestone | Feature | Target | Delivered | Status | Notes
-|--|--|--|--|--|--|
-|M1  :checkered_flag: |  |  09-30-2018  | 10-05-2018 |  | Research kickoff
-||[Research](Documents/EPICS-RESEARCH.md)| | |45%| :heavy_check_mark: #7, :heavy_check_mark: #8, :heavy_check_mark: #37
-|M2 :checkered_flag: |  |  10-15-2018  | 10-22-2018 |  | Initial UI
-||[Research](Documents/EPICS-RESEARCH.md)| | |50%| :heavy_check_mark: #9, :heavy_check_mark: #10, :heavy_check_mark: #13
-||[Identify Rock](Documents/EPICS-IDENTIFY_ROCK.md)  | | |10%| :heavy_check_mark: #17, :heavy_check_mark: #19
-|M3 :runner:|  |  01-25-2019  |  |  | Create the Event Logger microservice
-||[Event Logger](Documents/EPICS-EVENT_LOGGER.md)  | | |30%| :runner: #15
-|M4 :zzz:|  |  02-02-2019  |  |  | Capable of storing data
-||[Research](Documents/EPICS-RESEARCH.md) | | |100%| #11, #12, #18
-||[Identify Rock](Documents/EPICS-IDENTIFY_ROCK.md)  | | |30%| #20, #21
-||[Event Logger](Documents/EPICS-EVENT_LOGGER.md)  | | |40%| #35
-|M5 :zzz:|  |	02-17-2019	|  |  | User security
-||[User Security](Documents/EPICS-USER_SECURITY.md) |  | |100%| #6, #5, #1, #2, #3, #4
-|M6 :zzz:|  |	03-01-2019	|  |  | Identify rocks
-||[Identify Rock](Documents/EPICS-IDENTIFY_ROCK.md)  |  | |80%| #22, #23, #24, #25, #26, #27
-||[Event Logger](Documents/EPICS-EVENT_LOGGER.md)  |  | |90%| #16, #32, #33, #34
-|M7 :zzz:|  |	03-15-2019	|  |  | Display identified rocks
-||[Rock Collection](Documents/EPICS-ROCK_COLLECTION.md)  |  | |100%| #14, #36
-||[Identify Rock](Documents/EPICS-IDENTIFY_ROCK.md)  |  | |100%| #28, #29, #30, #31
-||[Event Logger](Documents/EPICS-EVENT_LOGGER.md)  |  | |100%| #35
-
----------------------------------------
-
 ## Implementation ##
 
 ### Microservice Images ###

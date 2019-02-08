@@ -1,4 +1,4 @@
-# RockId Epics - Identify Rock (QARP) #
+# RockId Requirements - Identify Rock (QARP) #
 
 ## Description ##
 
@@ -35,27 +35,6 @@ An authenticated user can step through the process to identify a rock.
   * Not in release 1.0
 * Medium to Coarse
   * Not in release 1.0
-
-## Epics -> Stories ##
-
-* Epic #8 : (13) : Create the reusable components of the question, answer, and result process (QARP)
-  * :heavy_check_mark: Story #17 : (3) : As a developer, I need to research and document the implementation strategy for the question, answer, and result process (QARP).
-  * Story #18 : (2) : As a developer, I need to create the tables required for QARP.
-  * :heavy_check_mark: Story #19 : (2) : As a user, I need to be asked about the grain size within the rock as the first question.
-  * Story #31 : (1) : As a user, I want to know that Mixed Fine and Coarse grained and Medium to Coarse grained are not yet implemented.
-* Epic #9 : (5) : Implement the Glassy grain size
-  * Story #20 : (2) : As a user, I need to identify Quartz.
-  * Story #21 : (2) : As a user, I need to identify Obsidian.
-* Epic #10 : (20) : Implement the Fined Grained size
-  * Story #22 : (1) : As a user, I need to identify Chert.
-  * Story #23 : (2) : As a user, I need to identify Quartzite.
-  * Story #24 : (0.5) : As a user, I need to identify Felsite.
-  * Story #25 : (2) : As a user, I need to identify Andesite.
-  * Story #26 : (1) : As a user, I need to identify Limestone.
-  * Story #27 : (0.5) : As a user, I need to identify Dolomite.
-  * Story #28 : (1) : As a user, I need to identify Slate.
-  * Story #29 : (0.5) : As a user, I need to identify Shale.
-  * Story #30 : (0.5) : As a user, I need to identify Serpentine.
 
 ## Screenshots ##
 
