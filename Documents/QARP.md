@@ -6,10 +6,10 @@ QARP stands for the **Q**uestion, **A**nswer, and **R**esult **P**rocess that is
 
 ## Problems To Be Solved ##
 
-- Given a question, what are possible answers?
+- Given a question, what are the possible answers?
 - Given an answer, what was the previous question?
-- Given a question, what the previous question?
-- Given and answer, what is the next question?
+- Given a question, what was the previous question?
+- Given an answer, what is the next question?
 
 ## Solution ##
 
