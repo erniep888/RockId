@@ -57,7 +57,7 @@ namespace RockId.BackendForFrontend_Spa
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
             app.UseMvc();
 
             app.UseCors("CorsPolicy");

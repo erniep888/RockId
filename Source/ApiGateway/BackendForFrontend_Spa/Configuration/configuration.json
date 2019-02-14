@@ -5,8 +5,8 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "localhost",
-                    "Port": 80
+                    "Host": "qarp",
+                    "Port": 8100
                 }
             ],
             "UpstreamPathTemplate": "/{everything}",
