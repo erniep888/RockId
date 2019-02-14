@@ -5,7 +5,7 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "qarp",
+                    "Host": "api-qarp",
                     "Port": 8100
                 }
             ],
