@@ -41,7 +41,7 @@ namespace Qarp.GlassyRock
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseMvc();
         }
     }
