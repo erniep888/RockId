@@ -1,10 +1,10 @@
 [environments]
   [environments.development]
-    name = "gateway-spa-bff"
+    name = "ui-spa-ng"
     namespace = "default"
     wait = true
     watch = false
     watch-delay = 2
     auto-connect = false
     dockerfile = "Dockerfile"
-    override-ports = ["90:90"]
+    override-ports = ["4200:4200"]  
