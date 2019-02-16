@@ -1,7 +1,0 @@
-version: '3'
-
-services:
-  
-  qarpglassyrock:
-    image: erniep888/qarpglassyrock:latest      
-    

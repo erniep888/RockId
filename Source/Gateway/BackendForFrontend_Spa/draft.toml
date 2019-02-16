@@ -1,0 +1,10 @@
+[environments]
+  [environments.development]
+    name = "gateway-spa-bff"
+    namespace = "default"
+    wait = true
+    watch = false
+    watch-delay = 2
+    auto-connect = false
+    dockerfile = "Dockerfile"
+    override-ports = ["90:90"]

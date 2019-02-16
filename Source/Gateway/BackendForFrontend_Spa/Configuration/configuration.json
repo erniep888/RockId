@@ -1,0 +1,22 @@
+{
+    "ReRoutes": [
+        {
+            "DownstreamPathTemplate": "/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "api-qarp",
+                    "Port": 8100
+                }
+            ],
+            "UpstreamPathTemplate": "/{everything}",
+            "UpstreamHttpMethod": [
+                "GET"
+            ]
+        }
+    ],
+    "GlobalConfiguration": {
+        "RequestIdKey": "OcRequestId",
+        "AdministrationPath": "/administration"
+    }
+}
