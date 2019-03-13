@@ -20,7 +20,10 @@ This project is intended for brainstorming and sharing design ideas before commi
 
 [Login](Documents/wireframe-png/Login.png)
 [Dashboard](Documents/wireframe-png/Dashboard.png)
-[Identify Rock - Grain Size]("Documents/wireframe-png/Identify Rock-GrainSize.png")
+[Identify Rock - Grain Size?](Documents/wireframe-png/Identify_Rock-GrainSize.png)
+[Identify Rock - Does it Scratch?](Documents/wireframe-png/Identify_Rock-Scratched.png)
+[Identify Rock - Light Color?](Documents/wireframe-png/Identify_Rock-LightColor.png)
+[Identify Rock - Felsite](Documents/wireframe-png/Identify_Rock-Felsite.png)
 [Rocks](Documents/wireframe-png/Rocks.png)
 [Events](Documents/wireframe-png/Events.png)
 
