@@ -2,28 +2,36 @@
 
 ## Definition ##
 
-A demonstration application for [Feature Driven Development](http://agilemodeling.com/essays/fdd.htm), [Microservice Architecture](https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/), [Angular](https://angular.io/), [SQL Server 2017 on Linux](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-overview?view=sql-server-2017), and [ASP.NET Core 2 Web API](https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-2.2).
+A demonstration application for [Feature Driven Development](http://agilemodeling.com/essays/fdd.htm), [Microservice Architecture](https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/), [Angular](https://angular.io/), [SQL Server Express 2017](https://www.microsoft.com/en-us/sql-server/sql-server-editions-express), and [ASP.NET Core 2 Web API](https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-2.2).
 
 The application is called RockId.  It allows a person to identify a rock based on responses to a series of questions and answers.  Each identified rock is placed in a rock collection where more information can be associated with the rock.  All significant events can be viewed by all users and all identified rocks can be viewed by all users.
 
-My team uses this application to brainstorm and share ideas before committing to architectural strategies for large applications that actually have significant personnel or monetary impact.  Anyone that reads this should feel free to clone, change, and contribute ideas for new approaches and/or technological solutions.
+This project is intended for brainstorming and sharing design ideas before committing to architectural strategies involving large applications that actually have significant costs associated.  Anyone that reads this should feel free to clone, change, and contribute ideas for new approaches or technological solutions.
 
 ---------------------------------------
 
-## Index ##
+## Deployment Architecture ##
 
-- :open_file_folder: [Project Structure](#project-structure)
-- :memo: [Requirements](#requirements)
-- :straight_ruler: [Features Based On Requirements](#features-based-on-requirements)
-  - [Epics - Research](Documents/EPICS-RESEARCH.md)
-  - [Epics - User Security](Documents/EPICS-USER_SECURITY.md)
-  - [Epics - Rock Collection](Documents/EPICS-ROCK_COLLECTION.md)
-  - [Epics - Event Logger](Documents/EPICS-EVENT_LOGGER.md)
-  - [Epics - Identify Rock](Documents/EPICS-IDENTIFY_ROCK.md)
+* [Deployment Architecture](Documents/architecture/Development-Deployment.pdf)
 
-- :triangular_flag_on_post: [Milestone Plan](#milestone-plan)
-- :construction_worker: [Implementation](#implementation)
-- :computer: [Development](#development)
+---------------------------------------
+
+## Wireframes ##
+
+* [Login](Documents/wireframe-png/Login.png)
+* [Dashboard](Documents/wireframe-png/Dashboard.png)
+* [Identify Rock - Grain Size?](Documents/wireframe-png/Identify_Rock-GrainSize.png)
+* [Identify Rock - Does it Scratch?](Documents/wireframe-png/Identify_Rock-Scratched.png)
+* [Identify Rock - Light Color?](Documents/wireframe-png/Identify_Rock-LightColor.png)
+* [Identify Rock - Felsite](Documents/wireframe-png/Identify_Rock-Felsite.png)
+* [Rocks](Documents/wireframe-png/Rocks.png)
+* [Events](Documents/wireframe-png/Events.png)
+
+---------------------------------------
+
+## Screenshots ##
+
+* [Identify New Rock](Documents/screenshots/IdentifyNewRock-0.3.0.png)
 
 ---------------------------------------
 
@@ -33,7 +41,7 @@ My team uses this application to brainstorm and share ideas before committing to
 - [Source](Source) - Contains all of the application source code
 
   - [UI](Source/UI/rock-id) - Contains the user interface implemented in Angular 7
-  - [Api Gateway](Source/ApiGateway) - Contains the API Gateway that enables a single entry point for all api calls to the backend among other [benefits](https://microservices.io/patterns/apigateway.html).
+  - [Api Gateway](Source/ApiGateway) - Contains the [Ocelot](http://threemammals.com/ocelot) API Gateway that enables a single entry point for all api calls to the backend among other [benefits](https://microservices.io/patterns/apigateway.html).
   - [Service - QARP Glassy Rock](Source/Service/Qarp/Qarp.GlassyRock) - Contains the microservice api that leverages QARP to identify glassy rock types.
   - [Service - Identified Rock](Source/Service/IdentifiedRock) - Contains the microservice api that allows identified rocks to be searched, edited, and removed.
   - [Service - Event Logger](Source/Service/EventLogger) - Contains the microservice api that allows all other services to log specific events and actions.
@@ -61,29 +69,29 @@ My team uses this application to brainstorm and share ideas before committing to
 
 ## Features Based On Requirements ##
 
-1. User Security
-   * ***Detail:*** All users must be known to the system.
-   * ***Solution:***
+1. ***User Security***
+   * **Detail:** All users must be known to the system.
+   * **Solution:**
      * Anonymous user access is denied.
      * All users must login in with an email address
      * All users have a password that is 8 to 32 characters long and alphanumeric with special characters.
-2. Display All Rocks Identified
-   * ***Detail:*** All rocks that have been identified should be visible to all other authenticated users.
-   * ***Solution:***
+2. ***Display All Rocks Identified***
+   * **Detail:** All rocks that have been identified should be visible to all other authenticated users.
+   * **Solution:**
      * Once a rock has been successfully identified, it will be displayed in a list displayed in the order of completion date.
      * All identified rocks will be displayed in one page.
-3. Display All Action History
-   * ***Detail:*** All actions are tracked and displayed for all authenticated users.
-   * ***Solution:***
+3. ***Display All Action History***
+   * **Detail:** All actions are tracked and displayed for all authenticated users.
+   * **Solution:**
      * The following actions are tracked:
        * Login
        * Logout
        * Rock identified
        * User added
      * All actions will be displayed in one page.
-4. Identify Rock
-   * ***Detail:*** An authenticated user can step through the process to identify a rock.
-   * ***Solution:***
+4. ***Identify Rock***
+   * **Detail:** An authenticated user can step through the process to identify a rock.
+   * **Solution:**
      * For 1.0, this feature only implements identification of glassy and fine-grained rocks. The authenticated user will answer questions to identity the rock.
      * What is the grain size?
        * Glassy (no visible grains)
@@ -114,23 +122,39 @@ My team uses this application to brainstorm and share ideas before committing to
        * Medium to Coarse
          * Not in release 1.0
 
+### Functional Grouping ###
+
+The high-level functional breakdown of RockId includes: 
+ * _User Interface_
+   * [Angular](https://angular.io/)
+   * [Angular Material Design Components - Web](https://github.com/trimox/angular-mdc-web)
+ * _Rock Identification_
+   * [Question, Answer, and Result Process](Documents/QARP.md)
+ * _Rock Collection Management_
+   * [Angular data-table](https://github.com/swimlane/ngx-datatable)
+ * _Event Logging_
+   * [RabbitMQ](http://www.rabbitmq.com/download.html)
+ * _User Security_
+   * [IdentityServer4](https://github.com/IdentityServer/IdentityServer4)
+ * _Common_
+
 ---------------------------------------
 
 ## Implementation ##
 
-### Microservice Images ###
-* [sql-qarp](https://cloud.docker.com/repository/docker/erniep888/sql-qarp) - provides the development sql server 2017 database server for the [QARP](Documents/QARP.md) microservices.  Each microservice uses its own database on the server.
+### Microservice API Projects ###
 
-### Functional Grouping ###
+Each microservice uses its own database on the server.
 
-The primary functions of RockId are _Rock Identification_, _Rock Collection Management_, _Event Logging_, and _User Security_.
+* [qarp](Source/Api/QARP) - provides the implementation of the [Question, Answser, and Result Process](Documents/QARP.md) microservices.  
 
-### Service Application Layers ###
+
+### API Application Layers ###
 
 1. Controller
    * This provides the web api controllers that respond to requests for the service.
 2. Dto
-   * Provides the data transfer objects that are used when the model object is not sufficient.  
+   * A data transfer object is used when the model object is not sufficient for exposing data outside of the API.
 3. Domain
    * Contains the data model and services that are invariant of use cases.  
 4. Infrastructure
@@ -149,7 +173,9 @@ The primary functions of RockId are _Rock Identification_, _Rock Collection Mana
 * [Angular 7](https://angular.io/)
 * [ASP.NET Core 2.2 Web API](https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-2.2)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/)
-* [Docker Desktop](https://www.docker.com/products/docker-desktop)
+* [SQL Server Express 2017](https://www.microsoft.com/en-us/sql-server/sql-server-editions-express)
+* [RabbitMQ](http://www.rabbitmq.com/download.html)
+* [IdentityServer4](https://github.com/IdentityServer/IdentityServer4)
 
 ### Installation Steps ###
 
@@ -157,27 +183,7 @@ The primary functions of RockId are _Rock Identification_, _Rock Collection Mana
 
 ### Build ###
 
-* SQL Server development Docker image 
-  * username: ```sa```
-  * password: ```Mypasswordis1234```
-  * ```Docker
-    docker run --name sql-qarp-20190118.2 -d -p 1434:1433 erniep888/sql-qarp
-    ```
-  * Or, create an empty SQL Server image and add databases using RockId scripts
-    ```Docker
-    docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=MYpasswordis1234 -p 1434:1433 --name sql-qarp-20190118.2s -d mcr.microsoft.com/mssql/server:2017-latest
-    ```
-* Event Logger - RabbitMQ Docker image
-  * ```Docker
-    docker run -d --hostname rockid-mq --name rockid-mq -p 5672:5672 -p 8080:15672 rabbitmq:3-management
-    ```
-  * From the PackageManager Console run the following:    
-    ```Powershell
-    EntityFrameworkCore\Add-Migration InitialCreate -StartupProject EventLogger
-    ```
-    ```Powershell
-    EntityFrameworkCore\Update-Database -StartupProject EventLogger
-    ```    
+* TBD - Once the application is capable of identifying a rock, this needs to be completed.
 
 ### Development Run ###
 
@@ -198,7 +204,7 @@ The primary functions of RockId are _Rock Identification_, _Rock Collection Mana
 
 ### Version ###
 
-0.0.3
+0.0.4
 
 ### Languages ###
 
@@ -207,6 +213,8 @@ The primary functions of RockId are _Rock Identification_, _Rock Collection Mana
 
 ### ChangeLog ###
 
+* 0.0.4
+  * Removed Docker container development and switching to Material Design
 * 0.0.3
   * Switching to a Docker Container development and deployment approach
 * 0.0.2
