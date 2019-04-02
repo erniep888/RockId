@@ -21,7 +21,7 @@ namespace RockId.Qarp.DataMapper.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("RockId.Qarp.DataMapper.Models.Qarps", b =>
+            modelBuilder.Entity("RockId.Qarp.DataMapper.Models.Qarp", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

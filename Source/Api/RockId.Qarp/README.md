@@ -28,3 +28,8 @@ dotnet sln RockId.Qarp.sln add ..\..\Common\RockId.Common\RockId.Common.csproj
 cd RockId.Qarp.DataMapper
 dotnet ef migrations add InitialCreate -v
 ```
+
+The following may cause issues...you will want to manually drop the table if issues arise.
+```shell
+dotnet ef database update
+```

@@ -15,7 +15,7 @@ namespace RockId.Qarp.DataMapper.Repositories
         {
         }
 
-        public virtual DbSet<Models.Qarps> Qarps { get; set; }
+        public virtual DbSet<Models.Qarp> Qarps { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -30,7 +30,7 @@ namespace RockId.Qarp.DataMapper.Repositories
         {
             modelBuilder.HasAnnotation("ProductVersion", "2.2.3-servicing-35854");
 
-            modelBuilder.Entity<Models.Qarps>(entity =>
+            modelBuilder.Entity<Models.Qarp>(entity =>
             {
                 entity.Property(e => e.DisplayText)
                     .IsRequired()
@@ -41,43 +41,43 @@ namespace RockId.Qarp.DataMapper.Repositories
                     .HasMaxLength(100);
             });
 
-            modelBuilder.Entity<Models.Qarps>().HasData(new Models.Qarps[] {
-                new Models.Qarps()
+            modelBuilder.Entity<Models.Qarp>().HasData(new Models.Qarp[] {
+                new Models.Qarp()
                 {
                     Id = 1, ParentId = null, DisplayText = "What is the grain size?", DisplayOrder = 1, IsQuestion = true, RockType = "NA",
                     CreateDateUtc = DateTime.UtcNow, CreatedBy = "System", UpdateDateUtc = DateTime.UtcNow, UpdatedBy = "System"
                 },
-                new Models.Qarps()
+                new Models.Qarp()
                 {
                     Id = 2, ParentId = 1, DisplayText = "Glassy (no visible grains)", DisplayOrder = 1, IsQuestion = false, RockType = "NA",
                     CreateDateUtc = DateTime.UtcNow, CreatedBy = "System", UpdateDateUtc = DateTime.UtcNow, UpdatedBy = "System"
                 },
-                new Models.Qarps()
+                new Models.Qarp()
                 {
                     Id = 3, ParentId = 1, DisplayText = "Fine Grained (not easy to see grains)", DisplayOrder = 2, IsQuestion = false, RockType = "NA",
                     CreateDateUtc = DateTime.UtcNow, CreatedBy = "System", UpdateDateUtc = DateTime.UtcNow, UpdatedBy = "System"
                 },
-                new Models.Qarps()
+                new Models.Qarp()
                 {
                     Id = 4, ParentId = 1, DisplayText = "Mixed Fine and Coarse", DisplayOrder = 3, IsQuestion = false, RockType = "NA",
                     CreateDateUtc = DateTime.UtcNow, CreatedBy = "System", UpdateDateUtc = DateTime.UtcNow, UpdatedBy = "System"
                 },
-                new Models.Qarps()
+                new Models.Qarp()
                 {
                     Id = 5, ParentId = 1, DisplayText = "Medium to Coarse", DisplayOrder = 4, IsQuestion = false, RockType = "NA",
                     CreateDateUtc = DateTime.UtcNow, CreatedBy = "System", UpdateDateUtc = DateTime.UtcNow, UpdatedBy = "System"
                 },
-                new Models.Qarps()
+                new Models.Qarp()
                 {
                     Id = 6, ParentId = 2, DisplayText = "Is it light or dark?", DisplayOrder = 1, IsQuestion = true, RockType = "NA",
                     CreateDateUtc = DateTime.UtcNow, CreatedBy = "System", UpdateDateUtc = DateTime.UtcNow, UpdatedBy = "System"
                 },
-                new Models.Qarps()
+                new Models.Qarp()
                 {
                     Id = 7, ParentId = 6, DisplayText = "Light - Quartz", DisplayOrder = 1, IsQuestion = false, RockType = "Igneous",
                     CreateDateUtc = DateTime.UtcNow, CreatedBy = "System", UpdateDateUtc = DateTime.UtcNow, UpdatedBy = "System"
                 },
-                new Models.Qarps()
+                new Models.Qarp()
                 {
                     Id = 8, ParentId = 6, DisplayText = "Dark - Obsidian", DisplayOrder = 2, IsQuestion = false, RockType = "Igneous",
                     CreateDateUtc = DateTime.UtcNow, CreatedBy = "System", UpdateDateUtc = DateTime.UtcNow, UpdatedBy = "System"
