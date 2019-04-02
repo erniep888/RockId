@@ -10,8 +10,8 @@ using RockId.Qarp.DataMapper.Repositories;
 namespace RockId.Qarp.DataMapper.Migrations
 {
     [DbContext(typeof(RockIdQarpContext))]
-    [Migration("20190402195922_MergedChangesToStable")]
-    partial class MergedChangesToStable
+    [Migration("20190402191947_AddedUpdatableAndMoreQarpData")]
+    partial class AddedUpdatableAndMoreQarpData
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,7 +21,7 @@ namespace RockId.Qarp.DataMapper.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("RockId.Qarp.DataMapper.Models.Qarp", b =>
+            modelBuilder.Entity("RockId.Qarp.DataMapper.Models.Qarps", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -57,104 +57,104 @@ namespace RockId.Qarp.DataMapper.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDateUtc = new DateTime(2019, 4, 2, 19, 59, 21, 798, DateTimeKind.Utc).AddTicks(4624),
+                            CreateDateUtc = new DateTime(2019, 4, 2, 19, 19, 46, 966, DateTimeKind.Utc).AddTicks(8238),
                             CreatedBy = "System",
                             DisplayOrder = 1,
                             DisplayText = "What is the grain size?",
                             IsQuestion = true,
                             RockType = "NA",
-                            UpdateDateUtc = new DateTime(2019, 4, 2, 19, 59, 21, 798, DateTimeKind.Utc).AddTicks(5328),
+                            UpdateDateUtc = new DateTime(2019, 4, 2, 19, 19, 46, 966, DateTimeKind.Utc).AddTicks(8943),
                             UpdatedBy = "System"
                         },
                         new
                         {
                             Id = 2,
-                            CreateDateUtc = new DateTime(2019, 4, 2, 19, 59, 21, 798, DateTimeKind.Utc).AddTicks(6039),
+                            CreateDateUtc = new DateTime(2019, 4, 2, 19, 19, 46, 966, DateTimeKind.Utc).AddTicks(9653),
                             CreatedBy = "System",
                             DisplayOrder = 1,
                             DisplayText = "Glassy (no visible grains)",
                             IsQuestion = false,
                             ParentId = 1,
                             RockType = "NA",
-                            UpdateDateUtc = new DateTime(2019, 4, 2, 19, 59, 21, 798, DateTimeKind.Utc).AddTicks(6044),
+                            UpdateDateUtc = new DateTime(2019, 4, 2, 19, 19, 46, 966, DateTimeKind.Utc).AddTicks(9658),
                             UpdatedBy = "System"
                         },
                         new
                         {
                             Id = 3,
-                            CreateDateUtc = new DateTime(2019, 4, 2, 19, 59, 21, 798, DateTimeKind.Utc).AddTicks(6050),
+                            CreateDateUtc = new DateTime(2019, 4, 2, 19, 19, 46, 966, DateTimeKind.Utc).AddTicks(9664),
                             CreatedBy = "System",
                             DisplayOrder = 2,
                             DisplayText = "Fine Grained (not easy to see grains)",
                             IsQuestion = false,
                             ParentId = 1,
                             RockType = "NA",
-                            UpdateDateUtc = new DateTime(2019, 4, 2, 19, 59, 21, 798, DateTimeKind.Utc).AddTicks(6050),
+                            UpdateDateUtc = new DateTime(2019, 4, 2, 19, 19, 46, 966, DateTimeKind.Utc).AddTicks(9664),
                             UpdatedBy = "System"
                         },
                         new
                         {
                             Id = 4,
-                            CreateDateUtc = new DateTime(2019, 4, 2, 19, 59, 21, 798, DateTimeKind.Utc).AddTicks(6051),
+                            CreateDateUtc = new DateTime(2019, 4, 2, 19, 19, 46, 966, DateTimeKind.Utc).AddTicks(9665),
                             CreatedBy = "System",
                             DisplayOrder = 3,
                             DisplayText = "Mixed Fine and Coarse",
                             IsQuestion = false,
                             ParentId = 1,
                             RockType = "NA",
-                            UpdateDateUtc = new DateTime(2019, 4, 2, 19, 59, 21, 798, DateTimeKind.Utc).AddTicks(6052),
+                            UpdateDateUtc = new DateTime(2019, 4, 2, 19, 19, 46, 966, DateTimeKind.Utc).AddTicks(9666),
                             UpdatedBy = "System"
                         },
                         new
                         {
                             Id = 5,
-                            CreateDateUtc = new DateTime(2019, 4, 2, 19, 59, 21, 798, DateTimeKind.Utc).AddTicks(6053),
+                            CreateDateUtc = new DateTime(2019, 4, 2, 19, 19, 46, 966, DateTimeKind.Utc).AddTicks(9666),
                             CreatedBy = "System",
                             DisplayOrder = 4,
                             DisplayText = "Medium to Coarse",
                             IsQuestion = false,
                             ParentId = 1,
                             RockType = "NA",
-                            UpdateDateUtc = new DateTime(2019, 4, 2, 19, 59, 21, 798, DateTimeKind.Utc).AddTicks(6053),
+                            UpdateDateUtc = new DateTime(2019, 4, 2, 19, 19, 46, 966, DateTimeKind.Utc).AddTicks(9667),
                             UpdatedBy = "System"
                         },
                         new
                         {
                             Id = 6,
-                            CreateDateUtc = new DateTime(2019, 4, 2, 19, 59, 21, 798, DateTimeKind.Utc).AddTicks(6054),
+                            CreateDateUtc = new DateTime(2019, 4, 2, 19, 19, 46, 966, DateTimeKind.Utc).AddTicks(9668),
                             CreatedBy = "System",
                             DisplayOrder = 1,
                             DisplayText = "Is it light or dark?",
                             IsQuestion = true,
                             ParentId = 2,
                             RockType = "NA",
-                            UpdateDateUtc = new DateTime(2019, 4, 2, 19, 59, 21, 798, DateTimeKind.Utc).AddTicks(6054),
+                            UpdateDateUtc = new DateTime(2019, 4, 2, 19, 19, 46, 966, DateTimeKind.Utc).AddTicks(9668),
                             UpdatedBy = "System"
                         },
                         new
                         {
                             Id = 7,
-                            CreateDateUtc = new DateTime(2019, 4, 2, 19, 59, 21, 798, DateTimeKind.Utc).AddTicks(6135),
+                            CreateDateUtc = new DateTime(2019, 4, 2, 19, 19, 46, 966, DateTimeKind.Utc).AddTicks(9669),
                             CreatedBy = "System",
                             DisplayOrder = 1,
                             DisplayText = "Light - Quartz",
                             IsQuestion = false,
                             ParentId = 6,
                             RockType = "Igneous",
-                            UpdateDateUtc = new DateTime(2019, 4, 2, 19, 59, 21, 798, DateTimeKind.Utc).AddTicks(6136),
+                            UpdateDateUtc = new DateTime(2019, 4, 2, 19, 19, 46, 966, DateTimeKind.Utc).AddTicks(9669),
                             UpdatedBy = "System"
                         },
                         new
                         {
                             Id = 8,
-                            CreateDateUtc = new DateTime(2019, 4, 2, 19, 59, 21, 798, DateTimeKind.Utc).AddTicks(6137),
+                            CreateDateUtc = new DateTime(2019, 4, 2, 19, 19, 46, 966, DateTimeKind.Utc).AddTicks(9670),
                             CreatedBy = "System",
                             DisplayOrder = 2,
                             DisplayText = "Dark - Obsidian",
                             IsQuestion = false,
                             ParentId = 6,
                             RockType = "Igneous",
-                            UpdateDateUtc = new DateTime(2019, 4, 2, 19, 59, 21, 798, DateTimeKind.Utc).AddTicks(6137),
+                            UpdateDateUtc = new DateTime(2019, 4, 2, 19, 19, 46, 966, DateTimeKind.Utc).AddTicks(9670),
                             UpdatedBy = "System"
                         });
                 });

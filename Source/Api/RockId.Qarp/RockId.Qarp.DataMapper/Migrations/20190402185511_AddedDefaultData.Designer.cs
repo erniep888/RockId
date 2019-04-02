@@ -10,8 +10,8 @@ using RockId.Qarp.DataMapper.Repositories;
 namespace RockId.Qarp.DataMapper.Migrations
 {
     [DbContext(typeof(RockIdQarpContext))]
-    [Migration("20190402171548_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20190402185511_AddedDefaultData")]
+    partial class AddedDefaultData
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -44,6 +44,16 @@ namespace RockId.Qarp.DataMapper.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Qarps");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DisplayOrder = 1,
+                            DisplayText = "What is the grain size?",
+                            IsQuestion = true,
+                            RockType = "NA"
+                        });
                 });
 #pragma warning restore 612, 618
         }

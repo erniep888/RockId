@@ -10,8 +10,8 @@ using RockId.Qarp.DataMapper.Repositories;
 namespace RockId.Qarp.DataMapper.Migrations
 {
     [DbContext(typeof(RockIdQarpContext))]
-    [Migration("20190402171548_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20190402183228_RemovedInsertable")]
+    partial class RemovedInsertable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
