@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace RockId.Qarp.DataMapper.Models
 {
-    public partial class Qarps : Updatable
+    public partial class Qarp : Updatable
     {
         public int Id { get; set; }
         public int? ParentId { get; set; }
