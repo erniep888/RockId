@@ -4,8 +4,8 @@
     "windowsAuthentication": false, 
     "anonymousAuthentication": true, 
     "iisExpress": {
-      "applicationUrl": "http://localhost:40838",
-      "sslPort": 44394
+      "applicationUrl": "http://localhost:43273",
+      "sslPort": 44304
     }
   },
   "profiles": {
@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "QARP": {
+    "RockId.Qarp.Api": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",
