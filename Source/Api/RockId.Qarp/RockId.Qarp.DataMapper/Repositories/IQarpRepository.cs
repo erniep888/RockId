@@ -4,12 +4,12 @@ using System.Text;
 
 namespace RockId.Qarp.DataMapper.Repositories
 {
-    interface IQarpRepository
+    public interface IQarpRepository
     {
-        Models.Qarp FindById(int id); 
-        
-        ICollection<Models.Qarp> FindByParentId(int? parentId);
+        Models.Qarp FindById(int id);
 
-        Models.Qarp Save(Models.Qarp qarp);
+        IList<Models.Qarp> FindByParentId(int? parentId);
+
+        void Save();
     }
 }
