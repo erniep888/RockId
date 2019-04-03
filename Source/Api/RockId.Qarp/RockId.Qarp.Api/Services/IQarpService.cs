@@ -5,18 +5,13 @@ using System.Text;
 
 namespace RockId.Qarp.Api.Service
 {
-    interface IQarpService
+    public interface IQarpService
     {
-        DataMapper.Models.Qarp Get(int qarpId);
+        DataMapper.Models.Qarp GetNextQuestion(DataMapper.Models.Qarp qarp);
 
-        DataMapper.Models.Qarp GetRoot();
+        ICollection<DataMapper.Models.Qarp> GetCurrentAnswers(DataMapper.Models.Qarp qarp);        
 
-        ICollection<DataMapper.Models.Qarp> GetPossibleAnswers(int questionId);
+        DataMapper.Models.Qarp GetPreviousQuestion(DataMapper.Models.Qarp qarp);
 
-        DataMapper.Models.Qarp GetPreviousQuestionByAnswer(DataMapper.Models.Qarp answer);
-
-        DataMapper.Models.Qarp GetPreviousQuestionByQuestion(DataMapper.Models.Qarp question);
-
-        DataMapper.Models.Qarp GetNextQuestion(DataMapper.Models.Qarp answer);
     }
 }
