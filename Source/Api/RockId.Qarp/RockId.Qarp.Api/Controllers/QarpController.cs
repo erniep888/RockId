@@ -8,7 +8,7 @@ namespace RockId.Qarp.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class QarpController : ControllerBase
     {
         // GET api/values
         [HttpGet]

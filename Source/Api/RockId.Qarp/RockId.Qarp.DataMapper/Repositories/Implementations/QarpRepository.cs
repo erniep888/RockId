@@ -20,16 +20,16 @@ namespace RockId.Qarp.DataMapper.Repositories.Implementations
             return this._context.Qarps.Find(id);
         }
 
-        public ICollection<Models.Qarp> FindByParentId(int? parentId)
+        public IList<Models.Qarp> FindByParentId(int? parentId)
         {
-            var results = (from q in _context.Qarps
-                           select q).ToList();
-            throw new NotImplementedException();
+            return (from q in _context.Qarps
+                    where q.ParentId == parentId
+                    select q).ToList<Models.Qarp>();            
         }
 
-        public Models.Qarp Save(Models.Qarp qarp)
+        public void Save()
         {
-            throw new NotImplementedException();
+            _context.SaveChanges();
         }
     }
 }
