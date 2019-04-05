@@ -9,7 +9,9 @@ import Qarp from './qarp';
 })
 export class IdentifyRockComponent implements OnInit {
 
-  private currentQuestion: Qarp
+  private currentQuestion: Qarp;
+  private currentAnswers: Qarp[];
+  private selectedAnswer: Qarp;
 
   constructor(private qarpService: QarpService) { }
 
@@ -18,8 +20,16 @@ export class IdentifyRockComponent implements OnInit {
   }
 
   getNextQuestion(): void{
-    this.qarpService.getNextQuestion().then((results) => {
+    let selectedAnswerId: number = (this.selectedAnswer) ? this.selectedAnswer.id : null;
+    this.qarpService.getNextQuestion(selectedAnswerId).then((results) => {
       this.currentQuestion = results.nextQuestion;
+      this.getCurrentAnswers();
+    });
+  }
+
+  getCurrentAnswers(): void{
+    this.qarpService.getCurrentAnswers(this.currentQuestion.id).then((results) => {
+      this.currentAnswers = results.currentAnswers;
     });
   }
 }
