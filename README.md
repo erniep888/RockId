@@ -204,7 +204,7 @@ Each microservice uses its own database on the server.
 
 ### Version ###
 
-0.0.4
+0.1.1
 
 ### Languages ###
 
@@ -213,6 +213,13 @@ Each microservice uses its own database on the server.
 
 ### ChangeLog ###
 
+* 0.1.1
+  * Update to release numbering to match the milestone numbering.
+* 0.1.0  
+  * Milestone 1 is complete
+  * Database migrations implemented
+  * QARP Web Api implemented for first question and answers
+  * UI leverages the QARP Web Api
 * 0.0.4
   * Removed Docker container development and switching to Material Design
 * 0.0.3
