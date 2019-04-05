@@ -21,36 +21,19 @@ namespace RockId.Qarp.Api.Controllers
             _qarpService = qarpService;
         }
 
-        // GET: api/NextQuestion
-        [HttpGet]
+        // GET: api/nextquestion
+        [HttpGet(Name = "GetNextQuestionByEmptyAnswerId")]
         public DataMapper.Models.Qarp Get()
         {
             return _qarpService.GetNextQuestion(null);
         }
 
-        // GET: api/NextQuestion/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        // GET: api/nextquestion/1
+        [HttpGet("{selectedAnswerId}", Name = "GetNextQuestionBySelectedAnswerId")]
+        public DataMapper.Models.Qarp Get(int? selectedAnswerId)
         {
-            return "value";
+            return _qarpService.GetNextQuestion(selectedAnswerId);
         }
 
-        // POST: api/NextQuestion
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT: api/NextQuestion/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
 }

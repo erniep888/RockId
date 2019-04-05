@@ -10,39 +10,21 @@
           <span *ngIf="currentQuestion">{{currentQuestion.displayText}}</span>
         </div>
         <div class="card-body">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-              checked>
+          <div class="form-check" *ngFor="let answer of currentAnswers">
+            <input class="form-check-input" type="radio">
             <label class="form-check-label" for="exampleRadios1">
-              Glassy (no visible grains)
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              Fine Grained (not easy to see grains)
-            </label>
-          </div>
-          <div class="form-check disabled">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3"
-              disabled>
-            <label class="form-check-label" for="exampleRadios3">
-              Mixed Fine and Coarse
-            </label>
-          </div>
-          <div class="form-check disabled">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3"
-              disabled>
-            <label class="form-check-label" for="exampleRadios3">
-              Medium to Coarse
+              {{ answer.displayText }}
             </label>
           </div>
         </div>
         <div class="card-footer">
-          <div class="clearfix">                      
-            <button type="button" class="btn btn-outline-info float-left" disabled><i class="far fa-arrow-alt-circle-left"></i> Previous</button>                       
-            <button type="button" class="btn btn-outline-success float-right">Next <i class="far fa-arrow-alt-circle-right"></i></button>
-            <button type="button" class="btn btn-outline-danger float-right mr-3"><i class="far fa-times-circle"></i> Cancel</button>  
+          <div class="clearfix">
+            <button type="button" class="btn btn-outline-info float-left" disabled><i
+                class="far fa-arrow-alt-circle-left"></i> Previous</button>
+            <button type="button" class="btn btn-outline-success float-right" disabled>Next <i
+                class="far fa-arrow-alt-circle-right"></i></button>
+            <button type="button" class="btn btn-outline-danger float-right mr-3" routerLink="/"><i class="far fa-times-circle"></i>
+              Cancel</button>
           </div>
         </div>
 

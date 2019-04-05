@@ -7,11 +7,11 @@ namespace RockId.Qarp.Api.Service
 {
     public interface IQarpService
     {
-        DataMapper.Models.Qarp GetNextQuestion(DataMapper.Models.Qarp qarp);
+        DataMapper.Models.Qarp GetNextQuestion(int? selectedAnswerQarpId);
 
-        ICollection<DataMapper.Models.Qarp> GetCurrentAnswers(DataMapper.Models.Qarp currentQuestion);        
+        ICollection<DataMapper.Models.Qarp> GetCurrentAnswers(int currentQuestionId);        
 
-        DataMapper.Models.Qarp GetPreviousQuestion(DataMapper.Models.Qarp qarp);
+        DataMapper.Models.Qarp GetPreviousQuestion(int? qarpId);
 
     }
 }

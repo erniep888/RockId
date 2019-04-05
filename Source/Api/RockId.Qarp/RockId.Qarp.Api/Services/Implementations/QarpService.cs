@@ -16,28 +16,23 @@ namespace RockId.Qarp.Api.Services.Implementations
             _qarpRepository = qarpRepository;
         }
 
-        public ICollection<DataMapper.Models.Qarp> GetCurrentAnswers(DataMapper.Models.Qarp currentQuestion)
+        public ICollection<DataMapper.Models.Qarp> GetCurrentAnswers(int currentQuestionId)
+        {
+            return _qarpRepository.FindByParentId(currentQuestionId);
+        }
+
+        public DataMapper.Models.Qarp GetNextQuestion(int? selectedAnswerQarpId)
+        {
+            ValidateForNextQuestion(selectedAnswerQarpId);
+            return GetSingleQarp(_qarpRepository.FindByParentId(selectedAnswerQarpId));
+        }
+
+        public DataMapper.Models.Qarp GetPreviousQuestion(int? qarpId)
         {
             throw new NotImplementedException();
         }
 
-        public DataMapper.Models.Qarp GetNextQuestion(DataMapper.Models.Qarp qarp)
-        {           
-            if (qarp == null)  // this is an attempt to find the root question                
-                return GetAndExpectOneQarp(_qarpRepository.FindByParentId(null));
-            else
-            {
-                ValidateForNextQuestion(qarp);
-                return GetAndExpectOneQarp(_qarpRepository.FindByParentId(qarp.Id));
-            }
-        }
-
-        public DataMapper.Models.Qarp GetPreviousQuestion(DataMapper.Models.Qarp qarp)
-        {
-            throw new NotImplementedException();
-        }
-
-        private DataMapper.Models.Qarp GetAndExpectOneQarp(IList<DataMapper.Models.Qarp> qarps)
+        private DataMapper.Models.Qarp GetSingleQarp(IList<DataMapper.Models.Qarp> qarps)
         {
             if (qarps != null && qarps.Count == 1)
                 return qarps[0];
@@ -52,10 +47,16 @@ namespace RockId.Qarp.Api.Services.Implementations
         }
 
         
-        private void ValidateForNextQuestion(DataMapper.Models.Qarp qarp)
+        // Next question expects the qarpId to be an answer.
+        private void ValidateForNextQuestion(int? selectedAnswerQarpId)
         {
-            if (qarp.IsQuestion)
-                throw new QarpException("NextQuestion expected an answer parameter.");
+            if (selectedAnswerQarpId.HasValue)
+            {
+                var qarp = _qarpRepository.FindById(selectedAnswerQarpId.Value);
+                if (qarp.IsQuestion)
+                    throw new QarpException("NextQuestion expected an answer parameter.");
+
+            }
         }
     }
 }
