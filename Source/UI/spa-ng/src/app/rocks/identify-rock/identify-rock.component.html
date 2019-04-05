@@ -7,7 +7,7 @@
     <div class="col-10">
       <div class="card">
         <div class="card-header">
-          What is the grain size?
+          <span *ngIf="currentQuestion">{{currentQuestion.displayText}}</span>
         </div>
         <div class="card-body">
           <div class="form-check">

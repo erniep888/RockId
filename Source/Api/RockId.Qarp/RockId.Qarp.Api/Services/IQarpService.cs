@@ -9,7 +9,7 @@ namespace RockId.Qarp.Api.Service
     {
         DataMapper.Models.Qarp GetNextQuestion(DataMapper.Models.Qarp qarp);
 
-        ICollection<DataMapper.Models.Qarp> GetCurrentAnswers(DataMapper.Models.Qarp qarp);        
+        ICollection<DataMapper.Models.Qarp> GetCurrentAnswers(DataMapper.Models.Qarp currentQuestion);        
 
         DataMapper.Models.Qarp GetPreviousQuestion(DataMapper.Models.Qarp qarp);
 
