@@ -16,7 +16,7 @@ namespace RockId.Qarp.Api.Services.Implementations
             _qarpRepository = qarpRepository;
         }
 
-        public ICollection<DataMapper.Models.Qarp> GetCurrentAnswers(DataMapper.Models.Qarp qarp)
+        public ICollection<DataMapper.Models.Qarp> GetCurrentAnswers(DataMapper.Models.Qarp currentQuestion)
         {
             throw new NotImplementedException();
         }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { QarpService } from './qarp.service';
+import Qarp from './qarp';
 
 @Component({
   selector: 'app-identify-rock',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IdentifyRockComponent implements OnInit {
 
-  constructor() { }
+  private currentQuestion: Qarp
 
-  ngOnInit() {
+  constructor(private qarpService: QarpService) { }
+
+  ngOnInit() {    
+    this.getNextQuestion();
   }
 
+  getNextQuestion(): void{
+    this.qarpService.getNextQuestion().then((results) => {
+      this.currentQuestion = results.nextQuestion;
+    });
+  }
 }
