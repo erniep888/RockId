@@ -41,7 +41,7 @@ RockId provides a consistent problem domain for research in implementation strat
   - [UI](Source/UI/spa-ng) - Contains the user interface implemented in Angular 7
   - [Api Gateway](Source/Gateway/BackendForFrontend_Spa) - Contains the [Ocelot](http://threemammals.com/ocelot) API Gateway that enables a single entry point for all api calls to the backend among other [benefits](https://microservices.io/patterns/apigateway.html).
   - [Api - QARP](Source/Api/RockId.Qarp) - Contains the microservice api that implements a [Question, Answser, and Result Process](Documents/QARP.md) to identify rocks.
-  - Api - Identified Rock - _Incomplete_ Contains the microservice api that allows identified rocks to be searched, edited, and removed.
+  - Api - Rocks  - _Incomplete_ Contains the microservice api that allows identified rocks to be searched, edited, and removed.
   - Api - Event Logger - _Incomplete_ Contains the microservice api that allows all other services to log specific events and actions.
   - Api - Identity - _Incomplete_ This microservice is an identity provider implemented with IdentityServer 4.
   - Common - EventBus - _Incomplete_ Contains an event bus that leverages RabbitMQ in order to allow services to communicate in a loosely coupled manner.  
