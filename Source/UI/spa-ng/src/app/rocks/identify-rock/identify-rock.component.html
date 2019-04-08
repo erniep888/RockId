@@ -11,7 +11,7 @@
         </div>
         <div class="card-body">
           <div class="form-check" *ngFor="let answer of currentAnswers">
-            <input class="form-check-input" type="radio">
+            <input class="form-check-input" type="radio" name="qarpAnswer" (change)="setSelectedAnswer(answer.id, $event)">
             <label class="form-check-label" for="exampleRadios1">
               {{ answer.displayText }}
             </label>
@@ -21,7 +21,7 @@
           <div class="clearfix">
             <button type="button" class="btn btn-outline-info float-left" disabled><i
                 class="far fa-arrow-alt-circle-left"></i> Previous</button>
-            <button type="button" class="btn btn-outline-success float-right" disabled>Next <i
+            <button type="button" class="btn btn-outline-success float-right" [disabled]="!selectedAnswerId" (click)="getNextQuestion()">Next <i
                 class="far fa-arrow-alt-circle-right"></i></button>
             <button type="button" class="btn btn-outline-danger float-right mr-3" routerLink="/"><i class="far fa-times-circle"></i>
               Cancel</button>
