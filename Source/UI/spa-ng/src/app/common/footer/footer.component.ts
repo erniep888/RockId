@@ -14,7 +14,7 @@ export class FooterComponent implements OnInit {
   }
 
   getReleaseNumber(): string {
-    return '0.1.1';
+    return '0.1.5';
   }
 
 }
