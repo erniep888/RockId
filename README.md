@@ -199,7 +199,7 @@ The high-level functional breakdown of RockId includes:
 
 ### Version ###
 
-0.1.1
+0.1.5
 
 ### Languages ###
 
@@ -208,6 +208,8 @@ The high-level functional breakdown of RockId includes:
 
 ### ChangeLog ###
 
+* 0.1.5
+  * Implemented the Glassy grain size question and answers.
 * 0.1.1
   * Update to release numbering to match the milestone numbering.
 * 0.1.0  

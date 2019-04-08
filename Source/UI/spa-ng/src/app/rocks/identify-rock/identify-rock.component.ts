@@ -11,16 +11,16 @@ export class IdentifyRockComponent implements OnInit {
 
   private currentQuestion: Qarp;
   private currentAnswers: Qarp[];
-  private selectedAnswer: Qarp;
+  private selectedAnswerId: number;
 
   constructor(private qarpService: QarpService) { }
 
-  ngOnInit() {    
-    this.getNextQuestion();
+  ngOnInit() {  
+    this.getNextQuestion();    
   }
 
   getNextQuestion(): void{
-    let selectedAnswerId: number = (this.selectedAnswer) ? this.selectedAnswer.id : null;
+    let selectedAnswerId: number = (this.selectedAnswerId) ? this.selectedAnswerId : null;
     this.qarpService.getNextQuestion(selectedAnswerId).then((results) => {
       this.currentQuestion = results.nextQuestion;
       this.getCurrentAnswers();
@@ -31,5 +31,10 @@ export class IdentifyRockComponent implements OnInit {
     this.qarpService.getCurrentAnswers(this.currentQuestion.id).then((results) => {
       this.currentAnswers = results.currentAnswers;
     });
+  }
+
+  setSelectedAnswer(answerId: number, $event){
+    this.selectedAnswerId = answerId;
+    sessionStorage.setItem('selectedAnswerId', answerId.toString());
   }
 }
