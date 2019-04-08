@@ -61,7 +61,7 @@ RockId provides a consistent problem domain for research in implementation strat
 
 ## Project Status ##
 
-|  User Security |     Rocks     |  User Events |  Dashboard   |  Identify Rock |
+|  User Security |     Rocks     |  User Events |  Dashboard   |      QARP      |
 | -------------- | ------------- | ------------ | ------------ | -------------- |
 |       0%       |       0%      |      0%      |      0%      |       40%      |
 |  :red_circle:  | :red_circle:  | :red_circle: | :red_circle: | :white_circle: |
@@ -109,7 +109,7 @@ RockId provides a consistent problem domain for research in implementation strat
      * The following widgets are displayed:
        * My Rock Identification Count
        * Total Rock Identification Count
-5. ***Identify Rock***
+5. ***QARP***
    * **Detail:** An authenticated user can step through the process to identify a rock.
    * **Solution:**
      * For 1.0, this feature only implements identification of glassy and fine-grained rocks. The authenticated user will answer questions to identity the rock.
@@ -159,7 +159,7 @@ The high-level functional breakdown of RockId includes:
    * [Angular data-table](https://github.com/swimlane/ngx-datatable)
  * _User Events_
    * [RabbitMQ](http://www.rabbitmq.com/download.html) 
-* _Rock Identification_
+* _Rock Identification / QARP_
    * [Question, Answer, and Result Process](Documents/QARP.md)
 
 ---------------------------------------
